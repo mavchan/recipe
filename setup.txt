@@ -1,0 +1,18 @@
+OSX
+- homebrew/macport
+	- http://brew.sh/
+- rbenv*
+	- https://github.com/sstephenson/rbenv#homebrew-on-mac-os-x
+	- "rbenv install 2.2.2"
+	- "rbenv global 2.2.2"
+- install rails
+	- "sudo gem install rails -v 4.2.1"
+- install postgres.app*
+	- "sudo ARCHFLAGS="-arch x86_64" gem install pg -- --with-pg-config=/Applications/Postgres.app/Contents/Versions/9.4/bin/pg_config"
+- create database for development
+	- "createdb votedotcom_development"
+- install Rubymine
+- in Rubymine:
+	- Settings -> Languages -> Ruby SDK -> + ~/.rbenv (if not already listed)
+	- Tools -> Bundler -> Install
+		- If not listed, look at Event Log for "Install Missing Gems"
