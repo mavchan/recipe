@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Whyvote</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div id="navbar">
+  <a class="navbar-brand" href="/">
+    <img src="<%= asset_path 'placeholder.svg' %>" />
+  </a>
+  <a class="navbar-elem" href="/teams/">Teams</a>
+  <a class="navbar-elem" href="/teams/new">Create a Team</a>
+  <a class="navbar-elem" href="/users/">View Users</a>
+  <% if user_signed_in? %>
+      <a class="navbar-elem right-align" data-method='delete' href="<%= destroy_user_session_path %>">Logout</a>
+      <!--<%= link_to('Logout', destroy_user_session_path, :method => :delete) %>-->
+  <% else %>
+      <a class="navbar-elem right-align" href="<%= new_user_session_path %>">Login</a>
+      <!--<%= link_to('Login', new_user_session_path)  %>-->
+  <% end %>
+</div>
+
+
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+
+<div id="app-container">
+    <%= yield %>
+</div>
+
+</body>
+</html>
