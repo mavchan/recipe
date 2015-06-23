@@ -12,9 +12,16 @@
   <a class="navbar-brand" href="/">
     <img src="<%= asset_path 'placeholder.svg' %>" />
   </a>
+
+  <a class="navbar-elem" href="/users/">View Users</a>
+  <a class="navbar-elem" href="/">My Profile</a>
+  <a class="navbar-elem" href="/">My Team Profile</a>
   <a class="navbar-elem" href="/teams/">Teams</a>
   <a class="navbar-elem" href="/teams/new">Create a Team</a>
-  <a class="navbar-elem" href="/users/">View Users</a>
+  <a class="navbar-elem" href="/">Current Policy Questions</a>
+
+
+
   <% if user_signed_in? %>
       <a class="navbar-elem right-align" data-method='delete' href="<%= destroy_user_session_path %>">Logout</a>
       <!--<%= link_to('Logout', destroy_user_session_path, :method => :delete) %>-->
