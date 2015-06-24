@@ -68,3 +68,42 @@ body {
     -moz-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
 }
+
+.field {
+}
+
+.actions{
+
+}
+
+
+/*this is for registrations/edit*/
+#content {
+    margin: auto;
+    border-radius: 20px;
+    width:650px;
+    overflow: auto;
+    padding: 25px;
+    top: 100px;
+    background-color: #76a5af;
+    text-align: justify;
+}
+
+.profile-pic{
+    float:left;
+}
+.profile-pic img{
+    width:200px;
+    height: auto;
+    border: 5px solid #ffffff;
+}
+
+.info {
+    width:400px;
+    float: right;
+}
+
+.cancel {
+    text-align:center;
+}
+/*end of registrations/edit stuff*/
