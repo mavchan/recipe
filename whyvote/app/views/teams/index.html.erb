@@ -2,24 +2,84 @@
 
 <h1>Listing Teams</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @teams.each do |team| %>
-      <tr>
-        <td><%= link_to team.name, team %></td>
-        <td><%= link_to 'Edit', edit_team_path(team) %></td>
-        <td><%= link_to 'Destroy', team, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
+<div id="biggscreen">
+  <h2 class="joinTeamPosition">Teams (16)</h2>
+  <div class="joinTeamPosition">
+    <button>Search Teams of Users</button>
+    <button>Create New Team</button>
+  </div>
+  <div id="firstCol" class="teamphd">
+    <img src="http://28oa9i1t08037ue3m1l0i861.wpengine.netdna-cdn.com/wp-content/uploads/2014/07/half-stick-figure.png" alt="Face placeholder" class="teamimg">
+    <p class="teamDesc">TEAM ECO FREAKS</p>
+    <p class="teamDesc">8 members</p>
+    <p class="teamDesc">DONE: 70 surveys</p>
+  </div>
+  <div id="otherCol" class="teamphd">
+    <img src="http://28oa9i1t08037ue3m1l0i861.wpengine.netdna-cdn.com/wp-content/uploads/2014/07/half-stick-figure.png" alt="Face placeholder" class="teamimg">
+    <p class="teamDesc">HIPPOS</p>
+    <p class="teamDesc">8 members</p>
+    <p class="teamDesc">DONE: 45 surveys</p>
+  </div>
+  <div id="otherCol" class="teamphd">
+    <img src="http://28oa9i1t08037ue3m1l0i861.wpengine.netdna-cdn.com/wp-content/uploads/2014/07/half-stick-figure.png" alt="Face placeholder" class="teamimg">
+    <p class="teamDesc">TEAM RED</p>
+    <p class="teamDesc">8 members</p>
+    <p class="teamDesc">DONE: 23 surveys</p>
+  </div>
+  <div id="otherCol" class="teamphd">
+    <img src="http://28oa9i1t08037ue3m1l0i861.wpengine.netdna-cdn.com/wp-content/uploads/2014/07/half-stick-figure.png" alt="Face placeholder" class="teamimg">
+    <p class="teamDesc">TEAM ORANGE</p>
+    <p class="teamDesc">6 members</p>
+    <p class="teamDesc">DONE: 15 surveys</p>
+  </div>
+  <div id="firstCol" class="teamphd">
+    <img src="http://28oa9i1t08037ue3m1l0i861.wpengine.netdna-cdn.com/wp-content/uploads/2014/07/half-stick-figure.png" alt="Face placeholder" class="teamimg">
+    <p class="teamDesc">TEAM ECO FREAKS</p>
+    <p class="teamDesc">8 members</p>
+    <p class="teamDesc">DONE: 14 surveys</p>
+  </div>
+  <div id="otherCol" class="teamphd">
+    <img src="http://28oa9i1t08037ue3m1l0i861.wpengine.netdna-cdn.com/wp-content/uploads/2014/07/half-stick-figure.png" alt="Face placeholder" class="teamimg">
+    <p class="teamDesc">HIPPOS</p>
+    <p class="teamDesc">8 members</p>
+    <p class="teamDesc">DONE: 12 surveys</p>
+  </div>
+  <div id="otherCol" class="teamphd">
+    <img src="http://28oa9i1t08037ue3m1l0i861.wpengine.netdna-cdn.com/wp-content/uploads/2014/07/half-stick-figure.png" alt="Face placeholder" class="teamimg">
+    <p class="teamDesc">TEAM RED</p>
+    <p class="teamDesc">8 members</p>
+    <button class="teamDesc">Join</button>
+  </div>
+  <div id="otherCol" class="teamphd">
+    <img src="http://28oa9i1t08037ue3m1l0i861.wpengine.netdna-cdn.com/wp-content/uploads/2014/07/half-stick-figure.png" alt="Face placeholder" class="teamimg">
+    <p class="teamDesc">TEAM ORANGE</p>
+    <p class="teamDesc">6 members</p>
+    <button class="teamDesc">Join</button>
+  </div>
+  <div id="firstCol" class="teamphd">
+    <img src="http://28oa9i1t08037ue3m1l0i861.wpengine.netdna-cdn.com/wp-content/uploads/2014/07/half-stick-figure.png" alt="Face placeholder" class="teamimg">
+    <p class="teamDesc">TEAM ECO FREAKS</p>
+    <p class="teamDesc">8 members</p>
+    <button class="teamDesc">Join</button>
+  </div>
+  <div id="otherCol" class="teamphd">
+    <img src="http://28oa9i1t08037ue3m1l0i861.wpengine.netdna-cdn.com/wp-content/uploads/2014/07/half-stick-figure.png" alt="Face placeholder" class="teamimg">
+    <p class="teamDesc">TEAM MONKEY</p>
+    <p class="teamDesc">5 members</p>
+    <button class="teamDesc">Join</button>
+  </div>
+  <div id="otherCol" class="teamphd">
+    <img src="http://28oa9i1t08037ue3m1l0i861.wpengine.netdna-cdn.com/wp-content/uploads/2014/07/half-stick-figure.png" alt="Face placeholder" class="teamimg">
+    <p class="teamDesc">TEAM ECO FREAKS</p>
+    <p class="teamDesc">5 members</p>
+    <button class="teamDesc">Join</button>
+  </div>
+  <div id="otherCol" class="teamphd">
+    <img src="http://28oa9i1t08037ue3m1l0i861.wpengine.netdna-cdn.com/wp-content/uploads/2014/07/half-stick-figure.png" alt="Face placeholder" class="teamimg">
+    <p class="teamDesc">TEAM ECO FREAKS</p>
+    <p class="teamDesc">5 members</p>
+    <button class="teamDesc">Join</button>
+  </div>
+</div>
 
 <%= link_to 'New Team', new_team_path %>

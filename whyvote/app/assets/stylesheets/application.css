@@ -120,11 +120,27 @@ body {
     height: 700px;
     border: 1px solid black;
     background-color: white;
-    margin: 1em auto 1em auto;
+    margin: auto;
     color: black;
     padding: 15px;
     overflow-x: auto;
-    overflow-y: auto
+    overflow-y: auto;
+}
+
+#biggscreen
+{
+    width: 1000px;
+    height: 700px;
+    border: 1px solid black;
+    background-color: white;
+    margin: -350px 0 0 -500px;
+    color: black;
+    padding: 15px;
+    overflow-x: auto;
+    overflow-y: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
 }
 
 #photo
@@ -160,7 +176,52 @@ body {
 {
     height: 250px;
 }
+
 #UW
 {
     margin-left: 200px;
+}
+
+#firstCol
+{
+    float: left;
+    display: table;
+    margin: 10px;
+}
+
+.teamDesc
+{
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+
+.teamphd
+{
+    width: 220px;
+    height: 40px;
+}
+
+.teamimg
+{
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    display: block;
+    border: 1px solid black;
+}
+
+#otherCol
+{
+    display: table;
+    margin: 10px;
+    float: left;
+}
+
+.joinTeamPosition
+{
+    margin-left: 50px;
+    margin-bottom: 15px;
 }
