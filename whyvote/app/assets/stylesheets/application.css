@@ -14,6 +14,7 @@
  *= require_self
  */
 
+
 body {
     margin: 0;
 }
@@ -69,29 +70,10 @@ body {
     transition: all 0.5s ease-out;
 }
 
+
+
+
 <<<<<<< HEAD
-
-=======
-.field {
-}
-
-.actions{
-
-}
-
-
-/*this is for registrations/edit*/
-#content {
-    margin: auto;
-    border-radius: 20px;
-    width:650px;
-    overflow: auto;
-    padding: 25px;
-    top: 100px;
-    background-color: #76a5af;
-    text-align: justify;
-}
-
 .profile-pic{
     float:left;
 }
@@ -101,6 +83,126 @@ body {
     border: 5px solid #ffffff;
 }
 
+=======
+
+/*Create a team CSS stuff - Mike*/
+
+
+#bigscreen
+{
+    width: 1000px;
+    height: 700px;
+    border: 1px solid black;
+    background-color: white;
+    margin: auto;
+    color: black;
+    padding: 15px;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+#biggscreen
+{
+    width: 1000px;
+    height: 700px;
+    border: 1px solid black;
+    background-color: white;
+    margin: -350px 0 0 -500px;
+    color: black;
+    padding: 15px;
+    overflow-x: auto;
+    overflow-y: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+#photo
+{
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    color: black;
+    margin-left: 20px;
+    margin-top: 20px;
+    float: left;
+}
+
+#placeholder
+{
+    margin-left: 40px;
+    margin-top: 60px;
+}
+
+.middle
+{
+    margin-left: 200px;
+    margin-bottom: 25px;
+}
+
+.fields
+{
+    width: 700px;
+    margin-bottom: 10px;
+}
+
+#description
+{
+    height: 250px;
+}
+
+#UW
+{
+    margin-left: 200px;
+}
+
+#firstCol
+{
+    float: left;
+    display: table;
+    margin: 10px;
+}
+
+.teamDesc
+{
+    text-align: center;
+    margin: auto;
+    display: block;
+
+
+.teamphd
+{
+    width: 220px;
+    height: 40px;
+}
+
+
+.teamimg
+{
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    display: block;
+    border: 1px solid black;
+}
+
+#otherCol
+{
+    display: table;
+    margin: 10px;
+    float: left;
+}
+
+.joinTeamPosition
+{
+    margin-left: 50px;
+    margin-bottom: 15px;
+}
+
+
+>>>>>>> 21f878f30933e5020d8255d493704257b56cc784
 .info {
     width:400px;
     float: right;
@@ -108,6 +210,13 @@ body {
 
 .cancel {
     text-align:center;
+<<<<<<< HEAD
 }
 /*end of registrations/edit stuff*/
 >>>>>>> d9bc28dc5e59903200ba1eec56d0c1ee2274803c
+=======
+    width:200px;
+    margin: auto;
+}
+
+>>>>>>> 21f878f30933e5020d8255d493704257b56cc784
