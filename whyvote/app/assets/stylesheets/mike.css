@@ -1,0 +1,165 @@
+/*Create a team CSS stuff - Mike*/
+
+#bigscreen
+{
+    width: 1000px;
+    height: 700px;
+    border: 1px solid black;
+    background-color: white;
+    margin: auto;
+    color: black;
+    padding: 15px;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+#biggscreen
+{
+    width: 1000px;
+    height: 700px;
+    border: 1px solid black;
+    border-left: none;
+    background-color: white;
+    color: black;
+    padding: 15px;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+#photo
+{
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    color: black;
+    margin-left: 20px;
+    margin-top: 20px;
+    float: left;
+}
+
+#placeholder
+{
+    margin-left: 40px;
+    margin-top: 60px;
+}
+
+.middle
+{
+    margin-left: 200px;
+    margin-bottom: 25px;
+}
+
+.fields
+{
+    width: 700px;
+    margin-bottom: 10px;
+}
+
+#description
+{
+    height: 250px;
+}
+
+#UW
+{
+    margin-left: 200px;
+}
+
+#firstCol
+{
+    float: left;
+    display: table;
+    margin: 10px;
+}
+
+.teamDesc
+{
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+
+.teamphd
+{
+    width: 220px;
+    height: 40px;
+}
+
+.teamimg
+{
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    display: block;
+    border: 1px solid black;
+}
+
+#otherCol
+{
+    display: table;
+    margin: 10px;
+    float: left;
+}
+
+.joinTeamPosition
+{
+    margin-left: 50px;
+    margin-bottom: 15px;
+}
+
+#mikenavbar
+{
+    height: 620px;
+    margin-left: 260px;
+    float: left;
+}
+
+#mikenavbar #holder
+{
+    width: 162px;
+    height: 652px;
+    border-right: 1px solid black;
+    padding-top: 80px;
+}
+
+#mikenavbar #holder ul
+{
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+
+#mikenavbar #holder ul li a
+{
+    text-decoration: none;
+    margin-right: 5px;
+    color: black;
+    border: 1px solid black;
+    padding: 20px;
+    width: 120px;
+    display: block;
+    background: grey;
+}
+
+#mikenavbar #holder ul li a:hover
+{
+    background: green;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+#holder ul li a#onlink
+{
+    background: green;
+    color: black;
+    boder-right: 1px solid white;
+}
+
+#holder ul li a#onlink:hover
+{
+    background: white;
+    color: blue;
+    text-shadow: 1px 1px 1px black;
+}
