@@ -1,15 +1,5 @@
 
 
-#content{
-    margin: auto;
-    border-radius: 20px;
-    width:650px;
-    overflow: auto;
-    padding: 25px;
-    top: 100px;
-    background-color: #eaeaea;
-    text-align: justify;
-}
 
 /*this is for registrations/edit*/
 #content {
@@ -25,11 +15,11 @@
 
 .profile-pic{
     float:left;
-}
-.profile-pic img{
-    width:200px;
-    height: auto;
-    border: 5px solid #ffffff;
+    img {
+        width: 200px;
+        height: auto;
+        border: 5px solid #ffffff;
+    }
 }
 
 .info {
