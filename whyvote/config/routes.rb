@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get '/teams/view-teams', :to => 'teams#view_teams'
+
+  get '/pages/quiz', :to => 'pages#policy_quiz'
+  get '/pages/friends', :to => 'pages#friends_match'
+  get '/pages/profile-match', :to => 'pages#profile_match'
+  get '/pages/profile-share', :to => 'pages#profile_share'
+  get '/pages/population', :to => 'pages#population_compare'
+
   resources :members
   resources :teams
   devise_for :users
