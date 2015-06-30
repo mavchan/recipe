@@ -75,7 +75,7 @@ class TeamsController < ApplicationController
   end
 
   def view_teams
-    render 'teams/viewTeams.html'
+    render 'teams/viewTeams.html.erb'
   end
 
   private
