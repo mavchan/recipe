@@ -6,7 +6,7 @@
     height: 700px;
     border: 1px solid black;
     background-color: white;
-    margin: auto;
+    margin: 0 auto;
     color: black;
     padding: 15px;
     overflow-x: auto;
@@ -20,10 +20,14 @@
     border: 1px solid black;
     border-left: none;
     background-color: white;
+    margin: -350px 0 0 -500px;
     color: black;
     padding: 15px;
     overflow-x: auto;
     overflow-y: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
 }
 
 #photo
@@ -112,16 +116,17 @@
 #mikenavbar
 {
     height: 620px;
-    margin-left: 260px;
+    margin-left: 365px;
+    margin-top: 5px;
     float: left;
 }
 
 #mikenavbar #holder
 {
     width: 162px;
-    height: 652px;
+    height: 673px;
     border-right: 1px solid black;
-    padding-top: 80px;
+    padding-top: 60px;
 }
 
 #mikenavbar #holder ul
