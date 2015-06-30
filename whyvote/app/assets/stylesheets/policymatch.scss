@@ -1,24 +1,28 @@
-  /*for all*/
+$font-size: 14px;
+$link-colour: #696969;
+$back-colour: #eaeaea;
+$button-back: #6495ed;
+$button-text: #ffffff;
+
+/*for all*/
 html{
-    font-size: 14px;
+    font-size: $font-size;
     font-family: sans-serif;
-    background-color: #eaeaea;
+    background-color: $back-colour;
 }
 
 a{
-    color: #696969;
+    color: $link-colour;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
+&:hover{
+     opacity: .7;
+     -webkit-transition: all 0.3s ease-out;
+     -moz-transition: all 0.3s ease-out;
+     transition: all 0.3s ease-out;
+ }
 }
-
-a:hover{
-    opacity: .7;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-}
-
 
 #content{
     width: 500px;
@@ -46,10 +50,9 @@ a:hover{
     color:darkseagreen;
     padding-bottom: 60px;
     text-align: center;
-}
-
 .name a{
     text-decoration: none;
+}
 }
 /*picture part*/
 
@@ -72,9 +75,9 @@ input[type=submit]{
     background: antiquewhite;
     font-size: 14px;
     box-shadow: 0px 2px 1px 0px #ccc;
-}
-input[type=submit]:hover{
-    cursor: pointer;
+&:hover{
+     cursor: pointer;
+ }
 }
 
 .skip {
@@ -102,14 +105,13 @@ input[type=submit]:hover{
     font-size:60px;
     padding-right:15px;
     display: inline-block;
-}
-
-.percent img{
+img{
     width:50px;
     height: 50px;
     border-radius:5px;
     margin-left: 20px;
     box-shadow: 0px 1px 1px 0px black;
+}
 }
 
 .view {
@@ -119,21 +121,20 @@ input[type=submit]:hover{
 }
 
 button{
-    color: #ffffff;
+    color: $button-text;
     padding:5px;
     margin: 5px;
-    background-color: #6495ed;
-}
-
-button:hover{
-    cursor: pointer;
+    background-color: $button-back;
+&:hover{
+     cursor: pointer;
+ }
 }
 
 select{
-    color: #ffffff;
+    color: $button-text;
     padding:5px;
     margin: 5px;
-    background-color: #6495ed;
+    background-color: $button-back;
 }
 /*Results of your profile match*/
 
@@ -201,17 +202,18 @@ select{
     width:330px;
 }
 
-.friend-pic a{
+.friend-pic{
+a{
     font-size:12px;
     vertical-align: 19px;
 }
-
-.friend-pic img{
+img{
     width:50px;
     height: 50px;
     border-radius:5px;
     margin-top:15px;
     border: 2px solid #eee;
+}
 }
 /*The following friends match you on this issue*/
 
@@ -225,13 +227,12 @@ select{
     margin-right:10px;
     float:right;
     display: block;
-}
-
-.members img{
+img{
     width:80px;
     height:80px;
     margin: 15.5px;
     border: 3px solid white;
+}
 }
 
 .members-text{
@@ -246,4 +247,3 @@ select{
     vertical-align: top;
 }
 /*whyVote members*/
-

@@ -73,7 +73,6 @@ body {
 
 
 
-<<<<<<< HEAD
 .profile-pic{
     float:left;
 }
@@ -83,9 +82,7 @@ body {
     border: 5px solid #ffffff;
 }
 
-=======
 
->>>>>>> 21f878f30933e5020d8255d493704257b56cc784
 .info {
     width:400px;
     float: right;
@@ -93,13 +90,7 @@ body {
 
 .cancel {
     text-align:center;
-<<<<<<< HEAD
+
 }
 /*end of registrations/edit stuff*/
->>>>>>> d9bc28dc5e59903200ba1eec56d0c1ee2274803c
-=======
-    width:200px;
-    margin: auto;
-}
 
->>>>>>> 21f878f30933e5020d8255d493704257b56cc784
