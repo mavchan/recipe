@@ -284,3 +284,105 @@
     border: 1px solid black;
     margin-top: 10px;
 }
+
+#status
+{
+    float: left;
+    margin-left: 250px;
+}
+
+#statusStatus
+{
+    margin-top: 33px;
+    margin-left: 600px;
+}
+
+#statusQuestion
+{
+    boder: 1px solid black;
+    margin-left: 320px;
+    margin-right: 350px;
+}
+
+#statusQtext
+{
+    text-align: center;
+}
+
+#trendingTable
+{
+    margin-left: 150px;
+    margin-top: 25px;
+    border: 1px solid black;
+    width: 850px;
+    height: 150px;
+    padding: 10px;
+}
+
+#ttCaption
+{
+    text-align: left;
+    font-size: 22px;
+}
+
+.lmSpacing
+{
+    margin-left: 200px;
+}
+
+.ttElement1
+{
+    width: 270px;
+    boder: 1px solid black;
+}
+
+.ttElement2
+{
+    width: 50px;
+}
+
+#lonf
+{
+    float: left;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 30px;
+    width: 120px;
+    height: 340px;
+}
+
+#smallNF
+{
+    width: 700px;
+    height: 320px;
+    margin-top: 30px;
+}
+
+.adsTitle
+{
+    text-align: center;
+    margin: 10px;
+    margin-top: none;
+}
+
+.adsBlock
+{
+    width: 118px;
+    height: 118px;
+    border: 1px solid black;
+}
+
+#topAd
+{
+    margin-bottom: 32px;
+}
+
+.nfpost
+{
+    margin-left: 100px;
+    border: 1px solid black;
+    padding-left: 30px;
+    padding: 10px;
+    margin-bottom:15px;
+    height: 70px;
+}
