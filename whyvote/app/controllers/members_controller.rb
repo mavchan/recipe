@@ -61,6 +61,14 @@ class MembersController < ApplicationController
     end
   end
 
+  def all_whyvote_members
+    render 'members/all-whyvote-members.html'
+  end
+
+  def user_profile
+    render 'members/user-profile.html'
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_member

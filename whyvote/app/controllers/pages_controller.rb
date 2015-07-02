@@ -18,4 +18,6 @@ class PagesController < ApplicationController
   def population_compare
     render 'pages/policy match/results/population compare/population-compare.html'
   end
+
+
 end
