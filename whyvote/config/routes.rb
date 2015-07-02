@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get '/teams/view-teams', :to => 'teams#view_teams'
 
+  get '/pages/more_info', :to => 'pages#edit_more_info'
   get '/pages/quiz', :to => 'pages#policy_quiz'
   get '/pages/friends', :to => 'pages#friends_match'
   get '/pages/profile-match', :to => 'pages#profile_match'
@@ -8,6 +9,7 @@ Rails.application.routes.draw do
   get '/pages/population', :to => 'pages#population_compare'
   get '/members/all-members', :to => 'members#all_whyvote_members'
   get '/members/user-profile', :to => 'members#user_profile'
+
 
   resources :members
   resources :teams

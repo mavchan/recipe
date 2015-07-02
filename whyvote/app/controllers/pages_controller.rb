@@ -19,5 +19,7 @@ class PagesController < ApplicationController
     render 'pages/policy match/results/population compare/population-compare.html'
   end
 
-
+  def edit_more_info
+    render 'pages/edit_more_info.html'
+  end
 end
