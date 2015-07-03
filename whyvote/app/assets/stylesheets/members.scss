@@ -1,3 +1,148 @@
 // Place all the styles related to the members controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/*whyVote members*/
+.members{
+  width: 480px;
+  height:100px;
+  margin-left: 10px;
+  margin-right:10px;
+  float:right;
+  display: block;
+  img{
+    width:80px;
+    height:80px;
+    margin: 15.5px;
+    border: 3px solid white;
+  }
+}
+
+.members-text{
+  width: 80px;
+  height: 60px;
+  overflow: auto;
+  text-align:center;
+  margin-left:18.5px;
+  margin-right:18.5px;
+  font-size:11px;
+  display: inline-block;
+  vertical-align: top;
+}
+/*whyVote members*/
+
+
+/*User profile; different CSS used for navbar*/
+
+#navbar-ashley
+{
+  height: 100%;
+  margin-left: 15%;
+  margin-top: 5%;
+  position: absolute;
+  width:15%;
+}
+
+#navbar-ashley #holder
+{
+  padding-top: 20%;
+}
+#navbar-ashley #holder ul
+{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar-ashley #holder ul li a
+{
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 10%;
+  overflow: auto;
+  display: block;
+  background: grey;
+  width: 74%;
+}
+
+#navbar-ashley #holder ul li a:hover
+{
+  background: green;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+#holder ul li a#onlink
+{
+  background: green;
+  color: black;
+  border-right: 1px solid white;
+}
+
+#holder ul li a#onlink:hover
+{
+  background: white;
+  color: blue;
+  text-shadow: 1px 1px 1ox black;
+}
+
+#page-ashley
+{
+  width: 60%;
+  height: 90%;
+  border: 1px solid black;
+  right: 5%;
+  padding: 2.5%;
+  position: absolute;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/*navbar part*/
+
+
+
+#profile-top{
+  width:100%;
+  height: 30%;
+}
+
+#profile-top .profile-photo img{
+  width: 150px;
+  height: 150px;
+  border: 5px solid #eee;
+  margin-top:20px;
+  margin-right:20px;
+  float: left;
+}
+
+#profile-top .profile-descrip{
+  font-size: 20px;
+  display: block;
+  height: 150px;
+  position: relative;
+  top:25px;
+  line-height: 150%;
+}
+
+
+#profile-middle{
+  width: 60%;
+  line-height:20px;
+  float: left;
+}
+
+#profile-right{
+  width:30%;
+  padding:5%;
+  line-height:30px;
+  height: 50%;
+  background-color: beige;
+  float: right;
+  overflow: scroll;
+  box-shadow: 0px 1px 1px 0px dimgrey;
+}
+
+/*User profile; different CSS used for navbar*/
+
