@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   get '/teams/view-teams', :to => 'teams#view_teams'
 
+  get '/teams/survey-page', :to => 'teams#survey_page'
+
   get '/pages/more_info', :to => 'pages#edit_more_info'
   get '/pages/quiz', :to => 'pages#policy_quiz'
   get '/pages/friends', :to => 'pages#friends_match'

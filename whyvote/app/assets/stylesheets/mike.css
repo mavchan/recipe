@@ -386,3 +386,67 @@
     margin-bottom:15px;
     height: 70px;
 }
+
+#navbarr
+{
+    background-color: #2E2F30;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+.navbarr-elem:hover
+{
+    background: #EEE;
+    color: #2E2F30;
+    text-shadow: 1px 1px 1px black;
+}
+
+.navbarr-elem
+{
+    display: inline-block;
+    background-color: #2E2F30;
+    color: white;
+    padding: 15px;
+    line-height: 20px;
+}
+
+#search-bar
+{
+    display: inline-block;
+    background-color: #2E2F30;
+    color: white;
+    height: 38px;
+    width: 265px;
+}
+
+#survey-header
+{
+    background-color: aliceblue;
+    padding-left: 40px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+.surveyQsection
+{
+    height: 250px;
+}
+
+.Qimportance
+{
+    text-align: center;
+    height: 100%;
+}
+
+.surveyQuestion
+{
+    float: left;
+    width: 70%;
+    padding-left: 30px;
+}
+
+.checkboxes
+{
+    list-style: none;
+}

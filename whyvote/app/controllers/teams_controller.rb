@@ -78,6 +78,10 @@ class TeamsController < ApplicationController
     render 'teams/viewTeams.html.erb'
   end
 
+  def survey_page
+    render 'teams/survey-page.html.erb'
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_team
