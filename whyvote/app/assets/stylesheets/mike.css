@@ -418,6 +418,7 @@
     color: white;
     height: 38px;
     width: 265px;
+    padding-top: 10px;
 }
 
 #survey-header
@@ -437,6 +438,7 @@
 {
     text-align: center;
     height: 100%;
+    padding-top:20px;
 }
 
 .surveyQuestion
