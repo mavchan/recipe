@@ -4,21 +4,22 @@
   <title>Whyvote</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <link href='http://fonts.googleapis.com/css?family=Cabin:400,400italic' rel='stylesheet' type='text/css'>
+
   <%= csrf_meta_tags %>
 </head>
 <body>
 
 <div id="navbar">
   <a class="navbar-brand" href="/">
-    <img src="<%= asset_path 'Whyvote_logo.jpg' %>" />
+    <img src="<%= asset_path 'Whyvote_logo_transparent.png' %>" />
   </a>
 
-  <a class="navbar-elem" href="/"><input type="text" placeholder="Search users/topics"></input></a>
+
   <a class="navbar-elem" href="/members/user-profile">My Profile</a>
-  <%= link_to "Home",teams_survey_page_path%>
-  <%= link_to "Teams",teams_view_teams_path%>
-  <a class="navbar-elem" href="/">Current Policy Questions</a>
-  <a class="navbar-elem" href="/">Discussion Forums</a>
+  <a class="navbar-elem" href="/teams/view-teams">View Users</a>
+  <a class="navbar-elem" href="/">Survey</a>
+  <a class="navbar-elem" href="/">About</a>
 
 
 
@@ -37,6 +38,11 @@
 
 <div id="app-container">
     <%= yield %>
+</div>
+
+<div id="footer">
+    A tool to find out which party you align with.
+    <span class="fb_link"><a href="http://www.facebook.com/groups/whyvote">Connect with us on Facebook.</a></span>
 </div>
 
 </body>
