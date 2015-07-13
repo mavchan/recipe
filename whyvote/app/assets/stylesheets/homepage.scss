@@ -1,223 +1,153 @@
-.hero {
-
-  background: url('http://www.newhdwallpapers.in/wp-content/uploads/2014/10/Geometric-Abstract-Shapes-Dark-Background.jpg') no-repeat center center;
-
-  background-size: cover;
-
+.home-background{
+  background-color: #000;
+  opacity: 1;
   height: 100vh;
-
-
-  &:before {
-
-    content: '';
-
-    position: fixed;
-
-    top: 0px;
-
-    right: 0;
-
-    bottom: 0;
-
-    left: 0;
-
-    background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
-
-    opacity: .8;
-
-  }
-
-  .intro {
-
-    padding: 3rem;
-
-    position: relative;
-
-    top: 50%;
-
-    transform: translateY(-50%);
-
-  }
-
-  h1 {
-
-    color: #fff;
-
-    font-size: 1.5rem;
-
-    line-height: 1.5em;
-
-    letter-spacing: -0.025em;
-
-    font-weight: 300;
-
-    text-align: center;
-
-  }
-
-  p {
-
-    color: #fff;
-
-    line-height: 1.75em;
-
-    font-weight: 200;
-
-    text-align: center;
-
-    margin-bottom: 2rem;
-
-  }
-
-  .see_friends a{
-
-    color: #fff;
-
-    line-height: 1.75em;
-
-    font-weight: 200;
-
-    text-align: center;
-
-    margin-bottom: 2rem;
-
-    font-size:1.2rem;
-
-    text-decoration: none;
-
-    background: transparent;
-
-    &:hover{
-      text-decoration: underline;
-
-      color: #eee;
-    }
-    }
-
-  .split.button {
-
-    width: 100%; }
-
-  .split.button.facebook {
-
-    background: #3b5998;
-
-    text-transform: uppercase; }
-
-  .split.button.facebook span {
-
-    background: #2d4373; }
-
-  .split.button.facebook span:after {
-
-    border: none;
-
-    font-family: "foundation-icons";
-
-    content: "\f1c4";
-
-    font-size: 2rem;
-
-    line-height: 0.25rem;
-
-    margin-left: -0.7rem; }
-
-
-  @media only screen and (min-width: 40.063em) {
-
-    .tech-img {
-
-      height: 18rem;
-
-      width: 18rem;
-
-    }
-
-    h1 {
-
-      padding-top: 4.5rem;
-
-      text-align: right;
-
-      font-size: 2.5rem;
-
-    }
-
-    p {
-
-      text-align: right;
-
-    }
-
-
-  }
-  .login input[type=text]{
-    width: 60%;
-    height: 7%;
-    background: transparent;
-    border: 1px solid rgba(255,255,255,0.6);
-    border-radius: 2px;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 400;
-    padding: 4px;
-  }
-
-  .login input[type=password]{
-    width: 60%;
-    height: 7%;
-    background: transparent;
-    border: 1px solid rgba(255,255,255,0.6);
-    border-radius: 2px;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 400;
-    padding: 4px;
-    margin-top: 1rem;
-  }
-
-  .login input[type=button]{
-    width: 60%;
-    height: 7%;
-    background: #fff;
-    border: 1px solid #fff;
-    cursor: pointer;
-    border-radius: 2px;
-    color: #a18d6c;
-    font-size: 1rem;
-    font-weight: 400;
-    padding: 6px;
-    margin-top: 1remx;
-  }
-
-  .login input[type=button]:hover{
-    opacity: 0.8;
-  }
-
-  .login input[type=button]:active{
-    opacity: 0.6;
-  }
-
-  .login input[type=text]:focus{
-    outline: none;
-    border: 1px solid rgba(255,255,255,0.9);
-  }
-
-  .login input[type=password]:focus{
-    outline: none;
-    border: 1px solid rgba(255,255,255,0.9);
-  }
-
-  .login input[type=button]:focus{
-    outline: none;
-  }
-
-  ::-webkit-input-placeholder{
-    color: rgba(255,255,255,0.6);
-  }
-
-  ::-moz-input-placeholder{
-    color: rgba(255,255,255,0.6);
-  }
-
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-family: "Helvetica", sans-serif;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;}
+
+.large-6-home{
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);}
+
+.split.button {
+  width: 50%; color: #fff; }
+.split.button.facebook {
+  background: #3b5998;
+  text-transform: uppercase; }
+.split.button.facebook span {
+  background: #2d4373; }
+.split.button.facebook span:after {
+  border: none;
+  font-family: "foundation-icons";
+  content: "\f1c4";
+  font-size: 2rem;
+  line-height: 0.25rem;
+  margin-left: -0.7rem; }
+
+.login{
+  width: 45%;
+  text-align: center;
+  margin: auto;
+  z-index:100;
 }
+
+.login input[type=text]{
+  width: 100%;
+  height: 10%;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.6);
+  border-radius: 2px;
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 4px;
+}
+
+.login input[type=password]{
+  width: 100%;
+  height: 10%;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.6);
+  border-radius: 2px;
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 4px;
+  margin-top: 10px;
+}
+
+.login input[type=submit]{
+  width: 50%;
+  height: 10%;
+  background: #EB4600;
+  border: 1px solid #fff;
+  cursor: pointer;
+  border-radius: 2px;
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 6px;
+  margin-top: 10px;
+}
+
+.login input[type=submit]:hover{
+  opacity: 0.8;
+}
+
+.login input[type=button]:active{
+  opacity: 0.6;
+}
+
+.login input[type=text]:focus{
+  outline: none;
+  border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login input[type=password]:focus{
+  outline: none;
+  border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login input[type=submit]:focus{
+  outline: none;
+}
+
+::-webkit-input-placeholder{
+  color: rgba(255,255,255,0.6);
+}
+
+::-moz-input-placeholder{
+  color: rgba(255,255,255,0.6);
+}
+
+input[type=checkbox].css-checkbox {
+  position:absolute;
+  left:-1000px;
+  z-index:1000;
+  overflow: auto;
+  clip: rect(0 0 0 0);
+  height:1px;
+  width:1px;
+  margin:1px;
+  padding:0;
+  border:0;}
+
+input[type=checkbox].css-checkbox + label.css-label {
+  height:1rem;
+  display:inline-block;
+  line-height:0.8rem;
+  background-repeat:no-repeat;
+  background-position: 0 0;
+  font-size:0.8rem;
+  padding-left:1.5rem;
+  vertical-align:middle;
+  cursor:pointer;
+  margin-bottom:1rem;}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+  background-position: 0 -1rem;}
+
+label.css-label {
+  background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_584715bec9b728f21a7a9ecb1b4eecf9.png);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }

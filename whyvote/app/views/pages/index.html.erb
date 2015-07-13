@@ -1,48 +1,30 @@
+<!DOCTYPE HTML>
 <html>
-    <head>
 
-    </head>
+<head>
+  <title>Example page</title>
+</head>
 
-    <body>
+<body>
+<div class="home-background">
+  <div class="large-6-home">
+    <img src="<%= asset_path 'Whyvote_logo_transparent.png' %>" width="60%"/>
+    </br></br>
+    <span style="font-size: 0.9rem;">
+      Find out which party you align with for the 2015 federal election.</br>
+      Compare with friends.</span><br></br>
+    <div class="login">
+      <form action="action_page.php" method="POST">
 
-    <section class="hero">
+        <input type="text" name="email" placeholder="Email"></input>
+        <input type="password" name="password" placeholder="Password"></input>
+        <input type="submit" value="Login"></input>
 
-      <div class="row intro">
+      </form>
+    </div>
 
-        <div class="small-centered medium-uncentered medium-6 large-7 columns">
-
-          <h1>Welcome to whyVOTE.</h1>
-
-          <p>Find out which party you align with for the 2015 federal election.</p>
-          <p>
-            <button style="width: 60%; align: center;">Complete survey now</button></br>
-          </p>
-        </div>
-
-        <div class="small-centered medium-uncentered medium-6 large-5 columns">
-
-        <div class="see_friends">
-          <a href="">See which of your friends are using whyVOTE</a></br>
-
-          <button href="#" class="facebook radius button split">
-            <span></span>sign in with facebook</button>
-
-          <div class="login">
-
-            <input type="text" name="user" placeholder="username"></input>
-
-            <input type="password" name="password" placeholder="password"></input>
-            </br>
-            <input type="button" value="Login"></input>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    </body>
+    <a style="font-size:0.75rem;" href="/"></br>Don't have an account? Sign up</a>
+  </div>
+</div>
+</body>
 </html>

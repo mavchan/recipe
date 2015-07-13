@@ -107,17 +107,16 @@ body {
     background-color: #424242;
     color: #fff;
     width: 100vw;
-    position: relative;
-    padding: 1rem;
-    font-size: 1.2rem;
+    position: absolute;
+    padding: 0.5rem;
+    font-size: 0.8rem;
     bottom: 0;
     left: 0;
     z-index:99;
     opacity: .7;
-    margin-top: -2.2rem;
 }
 
-.fb_link a, fb_link a:hover {
+.fb_link a, .fb_link a:hover {
     color: #fff;
     background: transparent;
 }

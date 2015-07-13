@@ -63,7 +63,7 @@ body {
     color: #222;
     cursor: auto;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 300;
     line-height: 1.5;
     margin: 0;
     padding: 0;
@@ -1349,7 +1349,7 @@ label {
     cursor: pointer;
     display: block;
     font-size: 0.875rem;
-    font-weight: normal;
+    font-weight: 300;
     line-height: 1.5;
     margin-bottom: 0;
     /* Styles for required inputs */ }
@@ -1444,7 +1444,8 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
     color: rgba(0, 0, 0, 0.75);
     display: block;
-    font-family: 'cabin', sans-serif;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
     font-size: 0.875rem;
     height: 2.3125rem;
     margin: 0 0 1rem 0;
@@ -1573,7 +1574,8 @@ select {
     border-color: #cccccc;
     font-size: 1rem;
     color: rgba(0, 0, 0, 0.75);
-    font-family: 'cabin', sans-serif;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
     line-height: normal;
     padding: 1rem 2rem 1.0625rem 2rem;
     border-radius: 0;
@@ -1689,7 +1691,8 @@ label.error {
     color: #f04124; }
 
 meta.foundation-mq-topbar {
-    font-family: 'cabin', sans-serif;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
     width: 40.0625em; }
 
 /* Wrapped around .top-bar to contain to grid width */
@@ -1763,7 +1766,7 @@ meta.foundation-mq-topbar {
 .top-bar .name h1 a, .top-bar .name h2 a, .top-bar .name h3 a, .top-bar .name h4 a, .top-bar .name p a, .top-bar .name span a {
     color: #FFFFFF;
     display: block;
-    font-weight: normal;
+    font-weight: 300;
     padding: 0 0.9375rem;
     width: 75%; }
 .top-bar .toggle-topbar {
@@ -1840,7 +1843,8 @@ meta.foundation-mq-topbar {
 .top-bar-section ul li > a {
     color: #FFFFFF;
     display: block;
-    font-family: 'cabin', sans-serif;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
     font-size: 0.8125rem;
     font-weight: normal;
     padding-left: 0.9375rem;
@@ -2838,7 +2842,8 @@ meta.foundation-mq-topbar {
 .pricing-table .price {
     background-color: #F6F6F6;
     color: #333333;
-    font-family: 'cabin', sans-serif;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
     font-size: 0.875rem;
     font-weight: normal;
     padding: 0.9375rem 1.25rem;
@@ -3364,7 +3369,8 @@ meta.foundation-mq-topbar {
     display: block;
     background-color: #EFEFEF;
     color: #222222;
-    font-family: 'cabin', sans-serif;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
     font-size: 1rem;
     padding: 1rem 2rem; }
 .tabs dd > a:hover,
@@ -3482,7 +3488,8 @@ ul.pagination li {
 
 .side-nav {
     display: block;
-    font-family: 'cabin', sans-serif;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
     list-style-position: outside;
     list-style-type: none;
     margin: 0;
@@ -3503,7 +3510,8 @@ ul.pagination li {
     color: #1cc7ff; }
 .side-nav li.active > a:first-child:not(.button) {
     color: #1cc7ff;
-    font-family: 'cabin', sans-serif;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
     font-weight: normal; }
 .side-nav li.divider {
     border-top: 1px solid;
@@ -3533,7 +3541,8 @@ ul.pagination li {
     background: #EFEFEF;
     color: #222222;
     display: block;
-    font-family: 'cabin', sans-serif;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
     font-size: 1rem;
     padding: 1rem; }
 .accordion .accordion-navigation > a:hover, .accordion dd > a:hover {
@@ -3712,9 +3721,9 @@ a img {
 
 /* Default paragraph styles */
 p {
-    font-family: 'cabin', sans-serif;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
     font-size: 1rem;
-    font-weight: normal;
     line-height: 1.6;
     margin-bottom: 1.25rem;
     text-rendering: optimizeLegibility; }
@@ -3793,15 +3802,16 @@ code {
     border-style: solid;
     border-width: 1px;
     color: #333333;
-    font-family: Consolas, "Liberation Mono", Courier, monospace;
-    font-weight: normal;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
     padding: 0.125rem 0.3125rem 0.0625rem; }
 
 /* Lists */
 ul,
 ol,
 dl {
-    font-family: 'cabin', sans-serif;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
     font-size: 1rem;
     line-height: 1.6;
     list-style-position: outside;
@@ -4428,9 +4438,9 @@ blockquote p {
 .sub-nav li {
     color: #999999;
     float: left;
-    font-family: 'cabin', sans-serif;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
     font-size: 0.875rem;
-    font-weight: normal;
     margin-left: 1rem;
     margin-bottom: 0; }
 .sub-nav dt a,
@@ -4466,8 +4476,8 @@ blockquote p {
     background: #333333;
     color: #FFFFFF;
     display: none;
-    font-family: 'cabin', sans-serif;
-    font-weight: normal;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
     position: absolute;
     top: 0;
     width: 95%;
@@ -4612,8 +4622,8 @@ blockquote p {
         top: 22px; } }
 .label {
     display: inline-block;
-    font-family: 'cabin', sans-serif;
-    font-weight: normal;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
     line-height: 1;
     margin-bottom: auto;
     position: relative;
