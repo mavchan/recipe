@@ -1,4 +1,8 @@
 class PagesController < ApplicationController
+  def show
+    render template: "pages/#{params[:page]}"
+  end
+
   def policy_quiz
     render 'pages/policy match/quiz/policy-match-quiz.html'
   end
