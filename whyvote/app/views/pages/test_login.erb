@@ -9,5 +9,6 @@
         <%= f.label :remember_me %>
         <%= f.submit 'Sign in' %>
         <%= link_to "Forgot your password?", new_password_path(:user) %>
+        <%= link_to "Don't have an account? Sign up!", new_user_registration_path %>
     <% end %>
 <% end %>
