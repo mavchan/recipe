@@ -59,7 +59,6 @@ body {
 }
 
 body {
-    background: #eee;
     color: #222;
     cursor: auto;
     font-style: normal;
@@ -67,7 +66,15 @@ body {
     line-height: 1.5;
     margin: 0;
     padding: 0;
-    position: relative; }
+    position: relative;
+    background: -moz-linear-gradient(-45deg, rgba(0,0,0,0) 0%, rgba(95,95,95,0) 40%, rgba(150,150,150,0.25) 63%, rgba(0,0,0,0.64) 99%, rgba(0,0,0,0.65) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(40%,rgba(95,95,95,0)), color-stop(63%,rgba(150,150,150,0.25)), color-stop(99%,rgba(0,0,0,0.64)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, rgba(0,0,0,0) 0%,rgba(95,95,95,0) 40%,rgba(150,150,150,0.25) 63%,rgba(0,0,0,0.64) 99%,rgba(0,0,0,0.65) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, rgba(0,0,0,0) 0%,rgba(95,95,95,0) 40%,rgba(150,150,150,0.25) 63%,rgba(0,0,0,0.64) 99%,rgba(0,0,0,0.65) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, rgba(0,0,0,0) 0%,rgba(95,95,95,0) 40%,rgba(150,150,150,0.25) 63%,rgba(0,0,0,0.64) 99%,rgba(0,0,0,0.65) 100%); /* IE10+ */
+    background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(95,95,95,0) 40%,rgba(150,150,150,0.25) 63%,rgba(0,0,0,0.64) 99%,rgba(0,0,0,0.65) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background-attachment: fixed; }
 
 a:hover {
     cursor: pointer; }
@@ -922,7 +929,7 @@ textarea {
         width: 33.33333%; }
 
     .large-5 {
-        width: 41.66667%; }
+        width: 45%;  display: inline-block; margin: auto; text-align: left; }
 
     .large-6 {
         width: 50%; }
@@ -2827,13 +2834,14 @@ meta.foundation-mq-topbar {
     border: solid 1px #DDDDDD;
     margin-left: 0;
     margin-bottom: 1.25rem;
+    text-align: center;
 }
 .pricing-table * {
     list-style: none;
     line-height: 1; }
 .pricing-table .title {
-    background-color: #E6F8E0;
-    color: #424242;
+    background-color: #d83431;
+    color: #fff;
     font-family: inherit;
     font-size: 1rem;
     font-weight: normal;
@@ -2842,8 +2850,7 @@ meta.foundation-mq-topbar {
 .pricing-table .price {
     background-color: #F6F6F6;
     color: #333333;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-weight: 300;
+    font-family: 'cabin', sans-serif;
     font-size: 0.875rem;
     font-weight: normal;
     padding: 0.9375rem 1.25rem;
@@ -2860,13 +2867,12 @@ meta.foundation-mq-topbar {
     text-align: center; }
 .pricing-table .bullet-item {
     background-color: #FFFFFF;
-    border-bottom: dotted 1px #DDDDDD;
     color: #333333;
     font-size: 0.875rem;
     font-weight: normal;
     padding: 0.9375rem;
-    text-align: center;
-    line-height: 1.2rem;}
+    line-height: 1.2rem;
+    text-align: inherit;}
 .pricing-table .cta-button {
     background-color: #FFFFFF;
     padding: 1.25rem 1.25rem 0;

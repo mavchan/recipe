@@ -65,8 +65,8 @@ class MembersController < ApplicationController
     render 'members/all-whyvote-members.html'
   end
 
-  def user_profile
-    render 'members/user-profile.html'
+  def dashboard
+    render 'members/dashboard.html'
   end
 
   private

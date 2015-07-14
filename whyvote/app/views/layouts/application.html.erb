@@ -8,8 +8,9 @@
 
   <%= csrf_meta_tags %>
 </head>
-<body>
 
+<body>
+<% if user_signed_in? %>
 <div id="navbar">
   <a class="navbar-brand" href="/">
     <img src="<%= asset_path 'Whyvote_logo_transparent.png' %>" />
@@ -21,14 +22,12 @@
   <a class="navbar-elem" href="/">Survey</a>
   <a class="navbar-elem" href="/">About</a>
 
-
+<% end %>
 
   <% if user_signed_in? %>
       <a class="navbar-elem right-align" data-method='delete' href="<%= destroy_user_session_path %>">Logout</a>
       <!--<%= link_to('Logout', destroy_user_session_path, :method => :delete) %>-->
-  <% else %>
-      <a class="navbar-elem right-align" href="<%= new_user_session_path %>">Login</a>
-      <!--<%= link_to('Login', new_user_session_path)  %>-->
+
   <% end %>
 </div>
 
@@ -40,9 +39,13 @@
     <%= yield %>
 </div>
 
+  <% if user_signed_in? %>
 <div id="footer">
     A tool to find out which party you align with.
     <span class="fb_link"><a href="http://www.facebook.com/groups/whyvote">Connect with us on Facebook.</a></span>
 </div>
+<%end%>
+
 </body>
+
 </html>

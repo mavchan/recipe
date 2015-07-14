@@ -24,7 +24,8 @@ body {
 
 #app-container {
     margin: 0;
-    margin-top: -40px;
+    margin-top: 50px;
+    height: 100%;
 }
 
 #navbar {
@@ -107,12 +108,9 @@ body {
     background-color: #424242;
     color: #fff;
     width: 100vw;
-    position: absolute;
+    position: relative;
     padding: 0.5rem;
     font-size: 0.8rem;
-    bottom: 0;
-    left: 0;
-    z-index:99;
     opacity: .7;
 }
 
