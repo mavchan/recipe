@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   get '/teams/view-teams', :to => 'teams#view_teams'
 
   get '/teams/survey-page', :to => 'teams#survey_page'
@@ -15,6 +16,7 @@ Rails.application.routes.draw do
 
   resources :members
   resources :teams
+  get "/pages/:page" => "pages#show"
   devise_for :users
 
   get '/users/:id', to: 'users#show', :as => :user
