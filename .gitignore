@@ -20,3 +20,4 @@ whyvote/.idea/*
 whyvote/tmp/*
 whyvote/bundle/*
 whyvote/.bundle/*
+whyvote/vendor/*
