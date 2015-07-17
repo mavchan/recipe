@@ -632,7 +632,7 @@ input[data-toggle]:checked + label:active {
 }
 
 
-/*profile.css*/
+/*profile.scss*/
 
 .political-measure{
     margin: auto;

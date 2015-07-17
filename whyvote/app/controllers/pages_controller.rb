@@ -43,6 +43,8 @@ class PagesController < ApplicationController
     render 'pages/survey-results.html'
   end
 
-
+  def about_team
+    render 'pages/about_team.html.erb'
+  end
 
 end
