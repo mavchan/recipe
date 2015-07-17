@@ -1,29 +1,18 @@
-<div class="row">
-  <img src="<%= asset_path 'Whyvote_logo.jpg' %>" width = "100%"/>
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home - Logged in</title>
+</head>
 
-<div class="row" id="navbarr">
+<body>
+<div id="navbarr" style="margin-top: -60px;">
   <div id="search-bar"><input type="text" placeholder="Search users/topics"></input></div>
   <a class="navbarr-elem" href="#">My Profile</a>
-  <a class="navbarr-elem" href="#">Home</a>
-  <a class="navbarr-elem" href="#">Teams</a>
-  <a class="navbarr-elem" href="#">Current Policy Questions</a>
+  <div class="navbarr-elem"><%= link_to 'Home', pages_home_page_logged_in_path %></div>
+  <div class="navbarr-elem"><%= link_to 'Teams', members_view_users_path %></div>
+  <div class="navbarr-elem"><%= link_to 'Current Policy Questions', pages_survey_page_path %></div>
   <a class="navbarr-elem" href="#">Discussion Forums</a>
 </div>
-
-<div class="row">
-
-  <div class = "large-3">
-    <h3 style="background-color: #848484; color: #424242; width: 100%; padding: 0.9375rem; margin: 0; text-align: center;">News Articles</h3>
-  </div>
-
-  <div class = "large-3 panel">
-    <img src="http://www.macleans.ca/wp-content/uploads/2014/02/Justin.Trudeau-300x300.jpg" width="40%" style="margin: 20px"/><a href="">Sample link 1</a>
-    <img src="https://www.digitalgov.gov/files/2014/05/250-x-250-canadian-flag-3-canada.jpg" width="40%" style="margin: 20px"/><a href="">Sample link 2</a>
-    <img src="https://d2ciprw05cjhos.cloudfront.net/files/v3/styles/gs_large/public/images/15/03/fkem1fqj_400x400.jpeg?itok=W_rsoA0Q" width="40%" style="margin: 20px"/><a href="">Sample link 3</a>
-  </div>
-
-  <div class="large-9">
 
     <fieldset style="border: 1px solid black; width: 95%; margin-left: auto; margin-right: auto; padding: none;">
       <legend>HOME</legend>
@@ -173,5 +162,5 @@
 
     </fieldset>
 
-  </div>
-</div>
+</body>
+</html>

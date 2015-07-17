@@ -76,4 +76,13 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+
+  get '/devise/registrations/index_1', :to => 'pages#register_new_user'
+  get '/pages/home-page-logged-in', :to => 'pages#home_logged_in'
+  get '/pages/survey-page', :to => 'pages#survey_page'
+  get '/pages/survey-results', :to => 'pages#survey_results'
+  get '/members/view-users', :to => 'members#view_users'
+
+
 end

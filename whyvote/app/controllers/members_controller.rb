@@ -79,4 +79,9 @@ class MembersController < ApplicationController
     def member_params
       params[:member]
     end
+
+  def view_users
+    render 'members/view-users.html'
+  end
+
 end

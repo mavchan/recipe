@@ -26,4 +26,23 @@ class PagesController < ApplicationController
   def edit_more_info
     render 'pages/edit_more_info.html'
   end
+
+  def register_new_user
+    render 'devise/registrations/index_1.html'
+  end
+
+  def home_logged_in
+    render 'pages/home-page-logged-in.html'
+  end
+
+  def survey_page
+    render 'pages/survey-page.html'
+  end
+
+  def survey_results
+    render 'pages/survey-results.html'
+  end
+
+
+
 end
