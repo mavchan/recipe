@@ -12,7 +12,12 @@ Rails.application.routes.draw do
   get '/pages/population', :to => 'pages#population_compare'
   get '/members/all-members', :to => 'members#all_whyvote_members'
   get '/members/dashboard', :to => 'members#dashboard'
-
+  get '/members/friend_profile', :to => 'members#friend_profile'
+  get '/members/no_info_dashboard', :to => 'members#no_info_dashboard'
+  get '/members/profile', :to => 'members#profile'
+  get '/members/stranger_profile', :to => 'members#stranger_profile'
+  get '/pages/about_team', :to => 'pages#about_team'
+  get '/pages/about_twhyvote', :to => 'pages#about_whyvote'
 
   resources :members
   resources :teams
