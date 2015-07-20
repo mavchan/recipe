@@ -19,17 +19,20 @@
 
   <script>
       $(document).ready(function(){
+          $("#read-more-target").hide(500);
           var expanded = false;
           $("#moveButton").click(function()
           {
               if (!expanded)
               {
                   $("#translation").animate({'marginTop' : '0px'}, {duration : 500});
+                  $("#read-more-target").show(500);
                   expanded = true;
               }
               else
               {
-                  $("#translation").animate({'marginTop' : '-250px'}, {duration : 500});
+                  $("#translation").animate({'marginTop' : '-12%'}, {duration : 500});
+                  $("#read-more-target").hide(500);
                   expanded = false;
               }
           });
@@ -55,66 +58,67 @@
 
     <fieldset style="border: 1px solid black; width: 95%; height: 95%; margin-left: auto; margin-right: auto; padding: none;">
       <legend>SURVEY</legend>
+
+      <div class="large-8" style="margin: auto;">
+
       <div style="width: 100%; margin: auto; background-color: #D83431;">
         <h3 style="text-align: center; color: white; padding: 5px;">Which Political Party do you align with most?</h3>
       </div>
-      <div style="width: 100%; height: 100%; background-color: #CCCCCC; padding-top: 50px; margin-top: -10px;">
-        <div style="width: 200px; height: 100px; float: left; margin-right: 60px; margin-left: 40px;">
-          <div style="width: 110px; height: 110px; border-radius: 50%; border: 5px solid #D83431; margin-left: auto; margin-right: auto; margin-top: -35px;">
-            <h2 style="text-align: center; line-height: 6rem;">1</h2>
-          </div>
+      <div style="width: 100%; height: 100%; padding-top: 3%">
+        <div style="margin-left: 5%; float: left;">
+            <h2 style="text-align: center;">1</h2>
         </div>
-        <div style="width: 90%; height: 370px; padding-left: auto; padding-right: auto;">
-          <h4>Should Canada keep troops in Iraq for the anti-ISIS mission?</h4>
+        <div style="width: 80%; margin: auto;">
+          <h4 style="margin-left: 13%;">Should Canada keep troops in Iraq for the anti-ISIS mission?</h4>
           <input type="checkbox" class="read-more-state" id="post-1"/>
-          <label id="moveButton" for="post-1" class="read-more-trigger"></label>
+          <label id="moveButton" for="post-1" class="read-more-trigger" style="margin-left: 15%;"></label>
           <p class="read-more-wrap" id="read-more-text"><span class="read-more-target">ISIS (The Islamic State in Iraq and Syria) is a militant group that advocates radical interpretations of Islam and claims religious authority over all Muslims. It is known for persecuting minorities, carrying out atrocities against children, women and men, as well as religious and ethnic communities in Iraq.<br><br>Canada currently provides airforce personnel, planning and liaison with coalition partners, and $128 million towards missions.<br><br>Some argue that it is necessary for the government to continue at its current level of involvement in stopping ISIS with coalition partners. But this means putting the lives of Canadian troops at risk and opportunity cost of resources that could be allocated elsewhere.</span></p>
         </div>
-        <div id="translation" style="width: 100%; padding-left: 170px; margin-top: -250px;">
-          <div style="float: left; width: 25px; height: 25px; margin-right: 50px; padding-left: 80px;">
+        <div id="translation" style="width: 100%; margin-top: -12%;">
+          <div style="float: left; width: 25px; height: 25px; margin-right: 3%; padding-left: 17%;">
             <h4>A)</h4>
           </div>
-          <div style="width: 1100px; margin-bottom: 15px;">
+          <div style="margin-bottom: 15px;">
             <input type="radio" name="aa-group" id="aa1" data-toggle="button">
-            <label class="button" for="aa1" style="width: 80%;">Yes</label>
+            <label class="button" for="aa1" style="width: 60%;">Yes</label>
           </div>
-          <div style="float: left; width: 25px; height: 25px; margin-right: 50px; padding-left: 80px;">
+          <div style="float: left; width: 25px; height: 25px; margin-right: 3%; padding-left: 17%;">
             <h4>B)</h4>
           </div>
-          <div style="width: 1100px; margin-bottom: 15px;">
+          <div style="margin-bottom: 15px;">
             <input type="radio" name="aa-group" id="aa2" data-toggle="button">
-            <label class="button" for="aa2" style="width: 80%;">No</label>
+            <label class="button" for="aa2" style="width: 60%;">No</label>
           </div>
-          <div style="float: left; margin-right: 40px; padding-top: 15px;">
+          <div style="float: left;  margin-right: 2%; margin-left: 10%;">
             <h5>Importance:</h5>
           </div>
           <div>
             <ul class="button-group round toggle" data-toggle="buttons-radio">
               <li>
                 <input type="radio" id="a1" name="a-group" data-toggle="button">
-                <label class="button" for="a1" style="width: 180px;">1</label>
+                <label class="button" for="a1" style="width: 140px;">1</label>
               </li>
               <li>
                 <input type="radio" id="a2" name="a-group" data-toggle="button">
-                <label class="button" for="a2" style="width: 180px;">2</label>
+                <label class="button" for="a2" style="width: 140px;">2</label>
               </li>
               <li>
                 <input type="radio" id="a3" name="a-group" data-toggle="button">
-                <label class="button" for="a3" style="width: 180px;">3</label>
+                <label class="button" for="a3" style="width: 140px;">3</label>
               </li>
               <li>
                 <input type="radio" id="a4" name="a-group" data-toggle="button">
-                <label class="button" for="a4" style="width: 180px;">4</label>
+                <label class="button" for="a4" style="width: 140px;">4</label>
               </li>
               <li>
                 <input type="radio" id="a5" name="a-group" data-toggle="button">
-                <label class="button" for="a5" style="width: 180px;">5</label>
+                <label class="button" for="a5" style="width: 140px;">5</label>
               </li>
             </ul>
           </div>
-          <p style="margin-left: 150px; margin-top: 15px;">1 = least important, 5 = most important</p>
-          <ul id="drop-nav" style="margin-top: 25px; margin-left: 600px;">
-            <li style=" width: 200px; padding: none;"><a href="#" style="background: #D83431; color: #fff;">Share Results With &#9661;</a>
+          <p style="margin-left: 21%; margin-top: 1%;">1 = least important, 5 = most important</p>
+          <ul id="drop-nav" style="margin-top: 25px; margin-left: 43%;">
+            <li style=" width: 200px; padding: none;"><a href="#" style="background: #D83431; color: #fff; text-align: center;">Share Results With &#9661;</a>
               <ul>
                 <li style="width: 182px; margin-left: -20px; height: 30px; line-height: 0px;"><a href="#">Public</a></li>
                 <li style="width: 182px; margin-left: -20px; height: 30px; line-height: 0px;"><a href="#">Friends</a></li>
@@ -124,6 +128,7 @@
           </ul>
           <button style="margin-left: 25px; background-color: #D83431; width: 200px; height: 60px;"><%= link_to 'Show Results', pages_survey_results_path %></button>
         </div>
+      </div>
       </div>
     </fieldset>
 

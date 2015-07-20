@@ -617,17 +617,17 @@ input[data-toggle]:checked + label:active {
     background: #D83431;
     border: 1px solid #D83431;
     border-radius: .25em;
-    margin-left: 300px;
-    margin-top: 10px;
+    margin-top: 1%;
+    margin-right: -5%;
+    margin-bottom: 2%;
 }
 
 #read-more-text {
     padding: 1%;
-    background: #CCCCCC;
     color: black;
-    width: 80%;
-    margin-left: 300px;
+    width: 70%;
     height: 80%;
+    margin-left: 15%;
     text-align: justify;
 }
 
