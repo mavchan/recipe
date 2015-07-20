@@ -80,10 +80,13 @@
   <div id="search-bar"><input type="text" placeholder="Search users/topics"></input></div>
   <a class="navbarr-elem" href="#">My Profile</a>
   <div class="navbarr-elem"><%= link_to 'Home', pages_home_page_logged_in_path %></div>
-  <div class="navbarr-elem"><%= link_to 'Teams', members_view_users_path %></div>
-  <div class="navbarr-elem"><%= link_to 'Current Policy Questions', pages_survey_page_path %></div>
+  <div class="navbarr-elem"><%= link_to 'View Users', pages_view_users_path %></div>
+  <div class="navbarr-elem"><%= link_to 'Survey', pages_survey_page_path %></div>
+  <div class="navbarr-elem"><%= link_to 'Friend Dasboard', pages_friend_dashboard_path %></div>
+  <div class="navbarr-elem"><%= link_to 'Stranger Dashboard', pages_stranger_dashboard_path %></div>
   <a class="navbarr-elem" href="#">Discussion Forums</a>
 </div>
+
 
     <fieldset style="border: 1px solid black; width: 95%; height: 95%; margin-left: auto; margin-right: auto; padding: none;">
       <legend>SURVEY RESULTS</legend>

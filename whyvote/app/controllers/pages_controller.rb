@@ -27,10 +27,6 @@ class PagesController < ApplicationController
     render 'pages/edit_more_info.html'
   end
 
-  def register_new_user
-    render 'devise/registrations/index_1.html'
-  end
-
   def home_logged_in
     render 'pages/home-page-logged-in.html'
   end
@@ -41,6 +37,18 @@ class PagesController < ApplicationController
 
   def survey_results
     render 'pages/survey-results.html'
+  end
+
+  def view_users
+    render 'pages/view-users.html'
+  end
+
+  def friend_dashboard
+    render "pages/friend's-dashboard.html"
+  end
+
+  def stranger_dashboard
+    render "pages/stranger's-dashboard.html"
   end
 
 

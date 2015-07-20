@@ -80,8 +80,8 @@ class MembersController < ApplicationController
       params[:member]
     end
 
-  def view_users
-    render 'members/view-users.html'
-  end
+
+
+
 
 end

@@ -78,11 +78,12 @@ Rails.application.routes.draw do
   #   end
 
 
-  get '/devise/registrations/index_1', :to => 'pages#register_new_user'
   get '/pages/home-page-logged-in', :to => 'pages#home_logged_in'
   get '/pages/survey-page', :to => 'pages#survey_page'
   get '/pages/survey-results', :to => 'pages#survey_results'
-  get '/members/view-users', :to => 'members#view_users'
+  get '/pages/view-users', :to => 'pages#view_users'
+  get "/pages/friend's-dashboard", :to => 'pages#friend_dashboard'
+  get "/pages/stranger's-dashboard", :to => 'pages#stranger_dashboard'
 
 
 end

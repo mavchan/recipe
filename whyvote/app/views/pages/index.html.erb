@@ -18,13 +18,13 @@
 
         <input type="text" name="email" placeholder="Email"></input>
         <input type="password" name="password" placeholder="Password"></input>
-        <input type="submit" value="Login"><%= link_to 'Login', pages_home_page_logged_in_path %></input>
+        <div class="button"><%= link_to 'Login', pages_home_page_logged_in_path %></div>
 
       </form>
     </div>
     <br>
 
-    <%= link_to "Don't have an account? Sign up", devise_registrations_index_1_path %>
+    <%= link_to "Don't have an account? Sign up", new_user_registration_path %>
   </div>
 </div>
 </body>
