@@ -1,109 +1,116 @@
-<!DOCTYPE html>
-<html>
 <head>
   <title>Home - Logged in</title>
 </head>
 
 <body>
-<div id="navbarr" style="margin-top: -60px;">
-  <div id="search-bar"><input type="text" placeholder="Search users/topics"></input></div>
-  <a class="navbarr-elem" href="#">My Profile</a>
-  <div class="navbarr-elem"><%= link_to 'Home', pages_home_page_logged_in_path %></div>
-  <div class="navbarr-elem"><%= link_to 'View Users', pages_view_users_path %></div>
-  <div class="navbarr-elem"><%= link_to 'Survey', pages_survey_page_path %></div>
-  <div class="navbarr-elem"><%= link_to 'Friend Dasboard', pages_friend_dashboard_path %></div>
-  <div class="navbarr-elem"><%= link_to 'Stranger Dashboard', pages_stranger_dashboard_path %></div>
-  <a class="navbarr-elem" href="#">Discussion Forums</a>
-</div>
-
-    <fieldset style="border: 1px solid black; width: 95%; margin-left: auto; margin-right: auto; padding: none;">
-      <legend>HOME</legend>
 
 
-      <div style="width: 100%; margin: auto; background-color: #D83431;">
-        <h3 style="text-align: center; color: white; padding: 5px;">Current Surveys</h3>
-      </div>
-      <div style="width: 100%; height: 100%; background-color: #CCCCCC; padding-top: 10px; margin-top: -10px; margin-bottom: 15px; height: 120px; padding-left: 15px;">
-        <img src="http://www.clker.com/cliparts/u/e/E/I/2/i/dark-green-check-mark-hi.png" style="height: 20%; height: 20%; margin-top: 25px; margin-left: 75px; float: left;">
-        <p style="margin-top: 25px; margin-left: 110px;"><b>Completed:</b> Political Survey for the 2015 Federal Election</p><br>
-        <p style="margin-left: 112px; margin-top: -30px;">You have no new surveys to complete.</p>
-      </div>
 
 
-      <div style="width: 100%; margin: auto; background-color: #D83431;">
-        <h3 style="text-align: center; color: white; padding: 5px;">My Recent Survey Results</h3>
-      </div>
-      <div style="width: 100%; height: 100%; background-color: #CCCCCC; padding-top: 10px; margin-top: -10px; margin-bottom: 15px; height: 400px;">
+<div class="large-8 medium-10 small-10" style="margin: auto;">
+  <fieldset style="border: 1px solid black; width: 95%; padding: none;">
+    <legend>HOME</legend>
 
-        <div style="width: 100%; padding-left: 100px; padding-top: 20px;">
-          <h4>Political Survey for the 2015 Federal Election</h4>
-          <hr style="width: 45%; margin-left: 130px; border-color: black;">
-        </div>
 
-        <div style="float: left; width: 300px; margin-left: 100px; margin-right: auto; margin-top: 25px;">
-          <div class="political-measure small" style="border-color: #FF6600; margin: 0.5rem; text-align: center; line-height: 4.5rem; float: left; margin-right: 50px;">
-            54%
-            <h6 style="margin-top: 10px;">
-                                    <span style="text-shadow: 1px 1px 1px #fff, 1px 1px 0px #000; font-size: 0.8rem;">
-                                        NDP
-                                    </span>
-            </h6>
+    <div class="large-12" style="margin-top: 0rem;">
+      <ul class="pricing-table active-tb shadow mrgn-20-top">
+        <li class="title">Current Surveys</li>
+        <li class="bullet-item">
+          <img src="http://www.clker.com/cliparts/u/e/E/I/2/i/dark-green-check-mark-hi.png" style="width: 2rem; height: auto;  margin-left: 75px;">
+          <b>Completed:</b> Political Survey for the 2015 Federal Election</br>
+          You have no new surveys to complete.</p>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="large-12" style="margin-top: 2rem;">
+      <ul class="pricing-table active-tb shadow mrgn-20-top">
+        <li class="title">My Recent Survey Results</li>
+        <li class="bullet-item">
+          <div style="width: 100%; ">
+            <h5>Political Survey for the 2015 Federal Election</h5>
+            <hr style="width: 45%; margin: auto; border-color: black;">
+
+            <ul class="small-block-grid-3">
+              <li style="margin-top:2em;">
+                <div style="font-size: 0.75rem; text-align: center; display: inline-block; line-height:1rem;">
+                  <div class="political-measure smallest" style="border-color: sandybrown; margin: 0.5rem;">
+                    </br>54%
+                    <h6></br></br>
+                                            <span style="text-shadow: 1px 1px 1px #fff, 1px 1px 0px #000; font-size: 0.7rem; ">
+                                                NDP
+                                            </span>
+                    </h6>
+                  </div>
+
+                  <div class="political-measure smallest" style="border-color: lightcoral; margin: 0.5rem;">
+                    </br>48%
+                    <h6></br></br>
+                                            <span style="text-shadow: 1px 1px 1px #fff, 1px 1px 0px #000; font-size: 0.7rem; ">
+                                                Liberal
+                                            </span>
+                    </h6>
+                  </div>
+
+                  <div class="political-measure smallest" style="border-color: #2f8731; margin: 0.5rem;">
+                    </br>36%
+                    <h6></br></br>
+                                            <span style="text-shadow: 1px 1px 1px #fff, 1px 1px 0px #000; font-size: 0.7rem; ">
+                                                Green
+                                            </span>
+                    </h6>
+                  </div>
+
+                  <div class="political-measure smallest" style="border-color: cornflowerblue; margin: 0.5rem;">
+                    </br>23%
+                    <h6></br></br>
+                                        <span style="text-shadow: 1px 1px 1px #fff, 1px 1px 0px #000; font-size: 0.7rem; ">
+                                            Conservative
+                                        </span>
+                    </h6>
+                  </div>
+
+
+                </div>
+              </li>
+
+              <li>
+                <div style="font-size: 0.75rem; line-height: 1rem; margin-top:2em;">
+                  Your views align most closely with:</br></br>
+                  <div class="political-measure big" style="line-height: 6.5rem; margin-bottom: 1rem;">
+                    76%
+                  </div>
+                  <h5 style="text-shadow: 1px 1px 1px #fff, 1px 1px 0px #000;">Liberatarian</h5>
+                  <span style="text-align: center;">See completed survey. </br><a href="#">Review results >></a></span>
+                </div>
+              </li>
+
+              <li style="margin-top: 2em; font-size: 0.85rem;">
+                You align on the following issues:</br></br>
+                <ul  style="font-size: 0.85rem;">
+                  <li><a href="#">Combatting Climate Change</a></li></br>
+                  <li><a href="#">Combatting Terrorist Threats</a></li></br>
+                  <li><a href="#">Employment and Skills Training</a></li></br>
+                  <li><a href="#">Post-Secondary Education</a></li>
+                </ul>
+              </li>
+            </ul>
+
+
           </div>
-
-          <div class="political-measure small" style="border-color: #D71920; margin: 0.5rem; text-align: center; line-height: 4.5rem;">
-            48%
-            <h6 style="margin-top: 10px;">
-                                    <span style="text-shadow: 1px 1px 1px #fff, 1px 1px 0px #000; font-size: 0.8rem; ">
-                                        Liberal
-                                    </span>
-            </h6>
-          </div>
-
-          <div class="political-measure small" style="border-color: #2F873E; margin: 0.5rem; text-align: center; line-height: 4.5rem; float: left; margin-right: 50px;">
-            36%
-            <h6 style="margin-top: 10px;">
-                                    <span style="text-shadow: 1px 1px 1px #fff, 1px 1px 0px #000; font-size: 0.8rem; ">
-                                        Green
-                                    </span>
-            </h6>
-          </div>
-
-          <div class="political-measure small" style="border-color: #333399; margin: 0.5rem; text-align: center; line-height: 4.5rem;">
-            23%
-            <h6 style="margin-top: 10px;">
-                                    <span style="text-shadow: 1px 1px 1px #fff, 1px 1px 0px #000; font-size: 0.8rem; margin-left: -10px;">
-                                        Conservative
-                                    </span>
-            </h6>
-          </div>
-        </div>
-
-        <div style="font-size: 0.75rem; text-align: center; display: inline-block; line-height: 1rem; height: 50px; margin-left: 20%; float: left; margin-top: 25px;">
-          <p style="text-align: center; margin-bottom: 5px;" >Your views align most closely with:</p>
-          <div class="political-measure big" style="line-height: 6.5rem; margin-bottom: 10px;">76%</div>
-          <h5 style="text-shadow: 1px 1px 1px #fff, 1px 1px 0px #000;">Liberatarian</h5>
-          <p style="text-align: center;">See completed survey. <a href="#">Review results >></a></p>
-        </div>
-
-        <div style="height: 100%; margin-left: 80%; padding-top: 30px;">
-          <p>You align on the following issues:</p>
-          <ul>
-            <li><a href="#"><p style="margin-top: -18px;">Combatting Climate Change</p></a></li>
-            <li><a href="#"><p style="margin-top: -18px;">Combatting Terrorist Threats</p></a></li>
-            <li><a href="#"><p style="margin-top: -18px;">Emploment and Skills Training</p></a></li>
-            <li><a href="#"><p style="margin-top: -18px;">Post-Secondary Education</p></a></li>
-          </ul>
-        </div>
-      </div>
+        </li>
+      </ul>
+    </div>
 
 
-      <div style="width: 100%; margin: auto; background-color: #D83431;">
-        <h3 style="text-align: center; color: white; padding: 5px;">Recently Added Friends (4)</h3>
-      </div>
-      <div style="width: 100%; height: 100%; background-color: #CCCCCC; margin-top: -50px; padding-left: 15%;">
-        <ul class="pricing-table shadow mrgn-20-top" style="margin-top:3rem;">
-          <li class="bullet-item" style="background-color: #CCCCCC;">
-            <div class="large-5" style="margin-left: 1.2rem; margin-right: 1.2rem;">
+
+    <div class="large-12" style="margin-top: 2rem;">
+      <ul class="pricing-table active-tb shadow mrgn-20-top">
+        <li class="title">Recently Added Friends (4)</li>
+        <li class="bullet-item">
+          <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-2">
+            <li>
                             <span class="friend-pic">
                                 <img src="http://ccdn.hiphopdx.com/2012/08/1-Waka_Flocka-MMG-hhdx-300x300.jpg" />
                                 <span class="friend-pic">
@@ -115,8 +122,8 @@
                                   </br>72%
                                 </div>
                             </span>
-            </div>
-            <div class="large-5" style="margin-left: 1.2rem; margin-right: 1.2rem;">
+            </li>
+            <li>
                             <span class="friend-pic">
                                 <img src="http://cdn.watchloud.com/wp-content/uploads/2014/07/whodat-waka-flocka-flame.jpg" />
                                 <span class="friend-pic">
@@ -128,10 +135,8 @@
                                   </br>59%
                                 </div>
                             </span>
-            </div>
-          </li>
-          <li class="bullet-item" style="background-color: #CCCCCC;">
-            <div class="large-5" style="margin-left: 1.2rem; margin-right: 1.2rem;">
+            </li>
+            <li>
                             <span class="friend-pic">
                                 <img src="http://ccdn.hiphopdx.com/2012/08/1-Waka_Flocka-MMG-hhdx-300x300.jpg" />
                                 <span class="friend-pic">
@@ -143,8 +148,8 @@
                                   </br>62%
                                 </div>
                             </span>
-            </div>
-            <div class="large-5" style="margin-left: 1.2rem; margin-right: 1.2rem;">
+            </li>
+            <li>
                             <span class="friend-pic">
                                 <img src="http://cdn.watchloud.com/wp-content/uploads/2014/07/whodat-waka-flocka-flame.jpg" />
                                 <span class="friend-pic">
@@ -156,13 +161,18 @@
                                   </br>59%
                                 </div>
                             </span>
-            </div>
-          </li>
+            </li>
+          </ul>
+    </div>
+    </li>
 
-        </ul>
-      </div>
+    </ul>
+</div>
 
-    </fieldset>
 
-</body>
+
+</fieldset>
+</div>
+
+
 </html>

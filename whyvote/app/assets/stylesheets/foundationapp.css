@@ -6428,12 +6428,7 @@ th.hide-for-touch {
     transition: 0.4s ease;
     z-index: 13;
 }
-.active-tb:hover {
-    position: relative;
-    box-shadow: 0px 2px 10px 0px rgba(50, 50, 50, 0.5);
-    transform: scale(1.15);
-    border: 0;
-    z-index: 15; }
+
 
 .fancy.button {
     background-color: #eee;
