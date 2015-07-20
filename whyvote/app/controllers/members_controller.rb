@@ -69,6 +69,22 @@ class MembersController < ApplicationController
     render 'members/dashboard.html'
   end
 
+  def no_info_dashboard
+    render 'members/no_info_dashboard.html.erb'
+  end
+
+  def friend_profile
+    render 'members/friend-profile.html.erb'
+  end
+
+  def stranger_profile
+    render 'members/stranger_profile.html.erb'
+  end
+
+  def profile
+    render 'members/profile.html.erb'
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_member

@@ -3,10 +3,9 @@
   opacity: 1;
   height: 100vh;
   width: 100vw;
-  position: fixed;
+  position: absolute;
   top: 0;
-  left: 0;
-  font-family: "Helvetica", sans-serif;
+  font-family: 'Arimo', sans-serif;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;}
@@ -36,6 +35,15 @@
   font-size: 2rem;
   line-height: 0.25rem;
   margin-left: -0.7rem; }
+.split.button.facebook.smallicon span {
+  background: #2d4373; }
+.split.button.facebook.smallicon span:after {
+  border: none;
+  font-family: "foundation-icons";
+  content: "\f1c4";
+  font-size: 1.3rem;
+  line-height: 0.25rem;
+  margin-left: -0.5rem; }
 
 .login{
   width: 45%;
