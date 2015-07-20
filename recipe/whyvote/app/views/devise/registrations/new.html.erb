@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Example page</title>
+</head>
+
+<body>
+<div class="home-background">
+  <div class="large-6-home">
+    <img src="<%= asset_path 'Whyvote_logo_transparent.png' %>" width="60%"/>
+    </br></br>
+    <button href="#" class="facebook button split"> <span></span>sign in with facebook</button></br>
+    <span style="font-size: 0.9rem;">Or sign up with your email address</span><br></br>
+    <div class="login">
+      <form action="action_page.php" method="POST">
+        <input type="text" name="first" placeholder="First Name"></input>
+        <input type="text" name="last" placeholder="Last Name"></input>
+        <input type="text" name="email" placeholder="Email"></input>
+        <input type="password" name="password" placeholder="Password"></input>
+        <input type="checkbox" class="css-checkbox">
+        <label class="css-label">I agree to the terms and privacy policy</label>
+        <div class="button"><%= link_to 'Register', pages_home_page_logged_in_path %></div>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
