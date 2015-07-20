@@ -87,8 +87,8 @@ Rails.application.routes.draw do
   get '/pages/survey-page', :to => 'pages#survey_page'
   get '/pages/survey-results', :to => 'pages#survey_results'
   get '/pages/view-users', :to => 'pages#view_users'
-  get "/pages/friend's-dashboard", :to => 'pages#friend_dashboard'
-  get "/pages/stranger's-dashboard", :to => 'pages#stranger_dashboard'
+  get '/pages/friend-dashboard', :to => 'pages#friend_dashboard'
+  get '/pages/stranger-dashboard', :to => 'pages#stranger_dashboard'
 
 
 end

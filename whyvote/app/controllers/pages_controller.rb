@@ -39,24 +39,20 @@ class PagesController < ApplicationController
     render 'pages/survey-results.html'
   end
 
-<<<<<<< HEAD
   def view_users
     render 'pages/view-users.html'
   end
 
   def friend_dashboard
-    render "pages/friend's-dashboard.html"
+    render "pages/friend-dashboard.html"
   end
 
   def stranger_dashboard
-    render "pages/stranger's-dashboard.html"
+    render "pages/stranger-dashboard.html"
   end
 
-
-=======
   def about_team
     render 'pages/about_team.html.erb'
   end
->>>>>>> afe9e223a26f9b61d3c25ca78f03fc4c72094966
 
 end
