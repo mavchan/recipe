@@ -14,13 +14,9 @@
       Find out which party you align with for the 2015 federal election.</br>
       Compare with friends.</span><br></br>
     <div class="login">
-      <form action="action_page.php" method="POST">
-
         <input type="text" name="email" placeholder="Email"></input>
         <input type="password" name="password" placeholder="Password"></input>
-        <div class="button"><%= link_to 'Login', pages_home_page_logged_in_path %></div>
-
-      </form>
+        <%= button_to 'Login', pages_home_page_logged_in_path, :method => :get %>
     </div>
     <br>
 
