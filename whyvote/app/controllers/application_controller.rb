@@ -31,7 +31,7 @@ class ApplicationController < ActionController::Base
     if current_user.admin?
       rails_admin.dashboard_path
     else
-      session[:previous_url] || root_path
+      'pages_home_page_logged_in'
     end
   end
 
