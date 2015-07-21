@@ -61,10 +61,6 @@ class MembersController < ApplicationController
     end
   end
 
-  def all_whyvote_members
-    render 'members/all-whyvote-members.html'
-  end
-
   def dashboard
     render 'members/dashboard.html'
   end
