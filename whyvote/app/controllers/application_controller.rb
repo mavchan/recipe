@@ -28,7 +28,11 @@ class ApplicationController < ActionController::Base
   # Returns the last url stored in the user's session object.
 
   def after_sign_in_path_for(resource)
-    session[:previous_url] || root_path
+    if current_user.admin?
+      rails_admin.dashboard_path
+    else
+      session[:previous_url] || root_path
+    end
   end
 
   def after_update_path_for(resource)
