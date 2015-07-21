@@ -1,3 +1,0 @@
-== WhyVote
-
-See [Setup Wiki](https://github.com/mavchan/recipe/wiki/Setup)
