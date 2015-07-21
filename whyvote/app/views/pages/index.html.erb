@@ -14,13 +14,14 @@
       Find out which party you align with for the 2015 federal election.</br>
       Compare with friends.</span><br></br>
     <div class="login">
+      <%= form_for(:user, url: pages_home_page_logged_in_path, method: :get) do |f| %>
         <input type="text" name="email" placeholder="Email"></input>
         <input type="password" name="password" placeholder="Password"></input>
-        <%= button_to 'Login', pages_home_page_logged_in_path, :method => :get %>
+        <%= button_to 'Login' %>
+        <%= link_to "Forgot your password?", new_user_password_path(:user) %></br>
+        <%= link_to "Don't have an account? Sign up", new_user_registration_path %>
+      <% end %>
     </div>
-    <br>
-
-    <%= link_to "Don't have an account? Sign up", new_user_registration_path %>
   </div>
 </div>
 </body>
