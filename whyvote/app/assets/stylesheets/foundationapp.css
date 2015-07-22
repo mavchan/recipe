@@ -1160,7 +1160,7 @@ button, .button {
     border-style: solid;
     border-width: 0;
     cursor: pointer;
-    font-size:0.8rem;
+    font-size: 16px;
     font-weight: normal;
     line-height: normal;
     margin: 0 0 1.25rem;
@@ -1168,7 +1168,7 @@ button, .button {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    padding: 0.5rem 0.6rem 0.5rem 0.6rem;
+    padding: 1% 0.1% 1% 1%;
     background-color: #D83431;
     border-color: #eee;
     color: #fff;
