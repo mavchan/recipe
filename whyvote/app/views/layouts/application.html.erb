@@ -2,9 +2,8 @@
 <html>
 <head>
   <title>Whyvote</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', 'http://fonts.googleapis.com/css?family=Arimo', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
 
   <%= csrf_meta_tags %>
 </head>
@@ -17,10 +16,10 @@
   </a>
 
 
-  <a class="navbar-elem" href="/members/user-profile">My Profile</a>
-  <a class="navbar-elem" href="/teams/view-teams">View Users</a>
-  <a class="navbar-elem" href="/">Survey</a>
-  <a class="navbar-elem" href="/">About</a>
+  <a class="navbar-elem" href="/members/profile">My Profile</a>
+  <a class="navbar-elem" href="/pages/view-users">View Users</a>
+  <a class="navbar-elem" href="/pages/survey-page">Survey</a>
+  <a class="navbar-elem" href="/pages/about_whyvote">About</a>
 
 <% end %>
 
