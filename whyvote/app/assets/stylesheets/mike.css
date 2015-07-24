@@ -617,20 +617,24 @@ input[data-toggle]:checked + label:active {
     background: #D83431;
     border: 1px solid #D83431;
     border-radius: .25em;
-    margin-top: 1%;
-    margin-right: -5%;
-    margin-bottom: 2%;
+    position: relative;
+    left: 0;
 }
 
 #read-more-text {
-    padding: 1%;
+    padding: 1em;
+    background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    -webkit-background-size: 3px 3px;
+    -moz-background-size: 3px 3px;
+    background-size: 3px 3px;
     color: black;
-    width: 70%;
-    height: 80%;
-    margin-left: 15%;
+    width: 100%;
     text-align: justify;
+    font-size:0.8em;
 }
-
 
 /*profile.scss*/
 
@@ -715,4 +719,18 @@ button.tiniest, .button.tiniest{
     width: 15rem;
     display: inline-block;
     margin-left:.5rem;
+}
+
+#partyStances{
+    background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    -webkit-background-size: 3px 3px;
+    -moz-background-size: 3px 3px;
+    background-size: 3px 3px;
+    width: 80%;
+    height: auto;
+    padding:1rem;
+    margin: auto;
 }

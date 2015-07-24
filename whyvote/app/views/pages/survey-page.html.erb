@@ -1,38 +1,24 @@
-<!DOCTYPE html>
-<html>
 <head>
-  <style type="text/css">
-      ul {list-style: none;padding: 0px;margin: 0px;}
-      ul li {display: block;position: relative;float: left;}
-      li ul {display: none;}
-      ul li a {display: block;background: #D83431;padding: 17px;text-decoration: none;
-          white-space: nowrap;color: #fff;}
-      ul li a:hover {background: #D83431;}
-      li:hover ul {display: block; position: absolute;}
-      li:hover li {float: none;}
-      li:hover a {background: #fff; color: black;}
-      li:hover li a:hover {background: #CCCCCC;}
-      #drop-nav li ul li {border-top: 0px;}
-  </style>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
+
   <script>
       $(document).ready(function(){
-          $("#read-more-target").hide();
+          $("#read-more-target, #read-more-text").hide();
           var expanded = false;
           $("#moveButton").click(function()
           {
               if (!expanded)
               {
                   $("#translation").animate({'marginTop' : '0px'}, {duration : 500});
-                  $("#read-more-target").show(500);
+                  $("#read-more-target, #read-more-text").show(500);
                   expanded = true;
               }
               else
               {
-                  $("#translation").animate({'marginTop' : '-12%'}, {duration : 500});
-                  $("#read-more-target").hide(500);
+                  $("#translation").animate({'marginTop' : '0'}, {duration : 500});
+                  $("#read-more-target, #read-more-text").hide(500);
                   expanded = false;
               }
           });
@@ -44,93 +30,68 @@
 
 <body>
 
-<div id="navbarr" style="margin-top: -60px;">
-  <div id="search-bar"><input type="text" placeholder="Search users/topics"></input></div>
-  <a class="navbarr-elem" href="#">My Profile</a>
-  <div class="navbarr-elem"><%= link_to 'Home', pages_home_page_logged_in_path %></div>
-  <div class="navbarr-elem"><%= link_to 'View Users', pages_view_users_path %></div>
-  <div class="navbarr-elem"><%= link_to 'Survey', pages_survey_page_path %></div>
-  <div class="navbarr-elem"><%= link_to 'Friend Dasboard', pages_friend_dashboard_path %></div>
-  <div class="navbarr-elem"><%= link_to 'Stranger Dashboard', pages_stranger_dashboard_path %></div>
-  <a class="navbarr-elem" href="#">Discussion Forums</a>
-</div>
+<div class="large-8 medium-8" style="margin: auto; margin-top: 2rem;">
+  <fieldset style="border: 1px solid black; padding: none;">
+    <legend>SURVEY</legend>
+    <div class="large-12 columns">
+      <ul class="pricing-table active-tb shadow mrgn-20-top" style="margin-top:3rem;">
+        <li class="title">Which political party do you align with most?</li>
+        <li class="bullet-item">
+          <h4 style="background: #ccc; display: inline-block; padding: 0.5rem 1rem 0.5rem 6rem; text-align: right; position: absolute; left: 0; box-shadow:0px 1px 0px 1px grey; text-shadow: 1px 1px 0 #fff, 2px 2px 0 #999;">Military Issues</h4></br>
+        </li>
+        <li class="bullet-item">
+          <h4>
+            <span style="font-size:2rem; text-shadow: 1px 1px 0 #fff, 2px 2px 0 #999;">1   </span>Should Canada keep troops in Iraq for the anti-ISIS mission?                         </h4>
+          <div style="width: 80%; margin: auto;">
 
+            <input type="checkbox" class="read-more-state" id="post-1"/>
+            <label id="moveButton" for="post-1" class="read-more-trigger" style="position: relative; margin-left: -85%;"></label>
+            <p class="read-more-wrap" id="read-more-text">
+                                    <span class="read-more-target">ISIS (The Islamic State in Iraq and Syria) is a militant group that advocates radical interpretations of Islam and claims religious authority over all Muslims. It is known for persecuting minorities, carrying out atrocities against children, women and men, as well as religious and ethnic communities in Iraq.<br><br>Canada currently provides airforce personnel, planning and liaison with coalition partners, and $128 million towards missions.<br><br>Some argue that it is necessary for the government to continue at its current level of involvement in stopping ISIS with coalition partners. But this means putting the lives of Canadian troops at risk and opportunity cost of resources that could be allocated elsewhere.
+                                    </span>
+            </p>
+            <div id="translation" style="width: 100%;">
+              <div style="text-align: left; width:100%; margin: 1rem 0;">
+                <span style="font-size: 1.375rem;">A)  </span>
+                <input type="radio" name="aa-group" id="aa1" data-toggle="button">
+                <label class="button" for="aa1" style="width: calc(100% - 3.5rem); background-color: #cdcdcd;">Yes</label>
+              </div>
+              <div style="text-align: left; width:100%;">
+                <span style="font-size: 1.375rem;">B)  </span>
+                <input type="radio" name="aa-group" id="aa2" data-toggle="button">
+                <label class="button" for="aa2" style="width: calc(100% - 3.5rem); background-color: #cdcdcd;">No</label>
+              </div>
+            </div>
+            </br>
 
-    <fieldset style="border: 1px solid black; width: 95%; height: 95%; margin-left: auto; margin-right: auto; padding: none;">
-      <legend>SURVEY</legend>
-
-      <div class="large-8" style="margin: auto;">
-
-      <div style="width: 100%; margin: auto; background-color: #D83431;">
-        <h3 style="text-align: center; color: white; padding: 5px;">Which Political Party do you align with most?</h3>
-      </div>
-      <div style="width: 100%; height: 100%; padding-top: 3%">
-        <div style="margin-left: 5%; float: left;">
-            <h2 style="text-align: center;">1</h2>
-        </div>
-        <div style="width: 80%; margin: auto;">
-          <h4 style="margin-left: 13%;">Should Canada keep troops in Iraq for the anti-ISIS mission?</h4>
-          <input type="checkbox" class="read-more-state" id="post-1"/>
-          <label id="moveButton" for="post-1" class="read-more-trigger" style="margin-left: 15%;"></label>
-          <p class="read-more-wrap" id="read-more-text"><span class="read-more-target">ISIS (The Islamic State in Iraq and Syria) is a militant group that advocates radical interpretations of Islam and claims religious authority over all Muslims. It is known for persecuting minorities, carrying out atrocities against children, women and men, as well as religious and ethnic communities in Iraq.<br><br>Canada currently provides airforce personnel, planning and liaison with coalition partners, and $128 million towards missions.<br><br>Some argue that it is necessary for the government to continue at its current level of involvement in stopping ISIS with coalition partners. But this means putting the lives of Canadian troops at risk and opportunity cost of resources that could be allocated elsewhere.</span></p>
-        </div>
-        <div id="translation" style="width: 100%; margin-top: -12%;">
-          <div style="float: left; width: 25px; height: 25px; margin-right: 3%; padding-left: 17%;">
-            <h4>A)</h4>
-          </div>
-          <div style="margin-bottom: 15px;">
-            <input type="radio" name="aa-group" id="aa1" data-toggle="button">
-            <label class="button" for="aa1" style="width: 60%;">Yes</label>
-          </div>
-          <div style="float: left; width: 25px; height: 25px; margin-right: 3%; padding-left: 17%;">
-            <h4>B)</h4>
-          </div>
-          <div style="margin-bottom: 15px;">
-            <input type="radio" name="aa-group" id="aa2" data-toggle="button">
-            <label class="button" for="aa2" style="width: 60%;">No</label>
-          </div>
-          <div style="float: left;  margin-right: 2%; margin-left: 10%;">
-            <h5>Importance:</h5>
-          </div>
-          <div>
-            <ul class="button-group round toggle" data-toggle="buttons-radio">
-              <li>
-                <input type="radio" id="a1" name="a-group" data-toggle="button">
-                <label class="button" for="a1" style="width: 140px;">1</label>
-              </li>
-              <li>
-                <input type="radio" id="a2" name="a-group" data-toggle="button">
-                <label class="button" for="a2" style="width: 140px;">2</label>
-              </li>
-              <li>
-                <input type="radio" id="a3" name="a-group" data-toggle="button">
-                <label class="button" for="a3" style="width: 140px;">3</label>
-              </li>
-              <li>
-                <input type="radio" id="a4" name="a-group" data-toggle="button">
-                <label class="button" for="a4" style="width: 140px;">4</label>
-              </li>
-              <li>
-                <input type="radio" id="a5" name="a-group" data-toggle="button">
-                <label class="button" for="a5" style="width: 140px;">5</label>
-              </li>
-            </ul>
-          </div>
-          <p style="margin-left: 21%; margin-top: 1%;">1 = least important, 5 = most important</p>
-          <ul id="drop-nav" style="margin-top: 25px; margin-left: 43%;">
-            <li style=" width: 200px; padding: none;"><a href="#" style="background: #D83431; color: #fff; text-align: center;">Share Results With &#9661;</a>
-              <ul>
-                <li style="width: 182px; margin-left: -20px; height: 30px; line-height: 0px;"><a href="#">Public</a></li>
-                <li style="width: 182px; margin-left: -20px; height: 30px; line-height: 0px;"><a href="#">Friends</a></li>
-                <li style="width: 182px; margin-left: -20px; height: 30px; line-height: 0px;"><a href="#">Only me</a></li>
+            <div class="large-2 middle-2 columns" style="vertical-align: middle; margin-left: -1rem;">
+              <h5 style="padding:0.2rem;">Importance:</h5>
+            </div>
+            <div class="large-10 middle-10 columns" style="vertical-align: middle;">
+              <ul class="button-group round even-5" style="vertical-align: middle;">
+                <li><a href="#" class="button" for="a1">1</a></li>
+                <li><a href="#" class="button" for="a2">2</a></li>
+                <li><a href="#" class="button" for="a3">3</a></li>
+                <li><a href="#" class="button" for="a4">4</a></li>
+                <li><a href="#" class="button" for="a5">5</a></li>
               </ul>
-            </li>
-          </ul>
-          <button style="margin-left: 25px; background-color: #D83431; width: 200px; height: 60px;"><%= link_to 'Show Results', pages_survey_results_path %></button>
-        </div>
-      </div>
-      </div>
-    </fieldset>
-
-    </body>
-</html>
+            </div>
+          </div>
+        </li>
+        <li class="bullet-item">
+          </br>1=least 5=most</br>
+          <select style= "margin-left:-60%;">
+            <option>Share results with</option>
+            <option>Public</option>
+            <option>Friends</option>
+            <option>Only Me</option>
+          </select>
+          <button style="position: absolute; right:0; width: 20%; margin-right: 14%;">
+            Show Results
+          </button>
+        </li>
+      </ul>
+    </div>
+  </fieldset>
+</div>
+</body>
