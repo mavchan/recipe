@@ -2882,6 +2882,7 @@ meta.foundation-mq-topbar {
     padding: 0.9375rem;
     text-align: center; }
 .pricing-table .bullet-item {
+    height: 35%;
     background-color: #FFFFFF;
     color: #333333;
     font-size: 0.875rem;
