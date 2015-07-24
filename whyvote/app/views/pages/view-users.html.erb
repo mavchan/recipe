@@ -1,170 +1,143 @@
-<!DOCTYPE HTML>
-<html>
-
 <head>
-  <title>View Users</title>
+  <title>Example page</title>
 </head>
 
 <body>
 
-<div id="navbarr" style="margin-top: -60px;">
-  <div id="search-bar"><input type="text" placeholder="Search users/topics"></input></div>
-  <a class="navbarr-elem" href="#">My Profile</a>
-  <div class="navbarr-elem"><%= link_to 'Home', pages_home_page_logged_in_path %></div>
-  <div class="navbarr-elem"><%= link_to 'View Users', pages_view_users_path %></div>
-  <div class="navbarr-elem"><%= link_to 'Survey', pages_survey_page_path %></div>
-  <div class="navbarr-elem"><%= link_to 'Friend Dasboard', pages_friend_dashboard_path %></div>
-  <div class="navbarr-elem"><%= link_to 'Stranger Dashboard', pages_stranger_dashboard_path %></div>
-  <a class="navbarr-elem" href="#">Discussion Forums</a>
-</div>
-
-
-    <fieldset style="border: 1px solid black; width: 95%; height: 95%; margin-left: auto; margin-right: auto; padding: 2%;">
-      <legend>whyVOTE Users</legend>
-
-      <div style="width: 100%; margin: auto; background-color: #D83431;">
-        <h3 style="text-align: center; color: white; padding: 5px;">Users (217)</h3>
-      </div>
-
-      <div style="width: 100%; height: 95%; background-color: #CCCCCC; margin-top: -10px; padding: 2%; ">
-        <div style="width: 100%; padding-left: 25px; margin-top: 10px;">
-          <h3 style="float: left; margin-right: 20px; margin-top: 0px;">Total Users (217)</h3>
+<div class="large-8" style="margin: auto; margin-top: 2rem;">
+  <div class="large-12 columns">
+    <ul class="pricing-table active-tb shadow mrgn-20-top" style="margin-top:3rem;">
+      <li class="title">Users</li>
+      <li class="bullet-item">
+        <div id="navBar"><b>Total users (271)</b>
           <form method="get" action="search.php">
-            <input id="searchBox" type="text" placeholder="Find a user" style="margin-right: 15px;">
+            <i class="fi-magnifying-glass" style="position: absolute; margin-left:1rem; margin-top:.4rem; color: #727272;"></i>
+            <input id="searchBox" type="text" placeholder="Find a user">
             <a href="#" class="button tiniest"><span style="font-size:1.1rem; vertical-align: middle">+</span>  Add People</a>
+
           </form>
         </div>
-
-        <div style="padding-left: 10%;">
-          <div style="margin-left: 1.2rem; margin-right: 1.2rem; width: 33%; display: inline-block; margin: auto; text-align: left;">
-                            <span class="friend-pic">
-                                <img src="http://ccdn.hiphopdx.com/2012/08/1-Waka_Flocka-MMG-hhdx-300x300.jpg" />
-                                <span class="friend-pic">
-                                    <p style="margin-top: 30px;"><b>Waka Flocka Flame</b></p>
-                                    <button disabled style="background: white; color: black; height: 40px; width: 180px; padding-top: 0px;"><img src="http://uxrepo.com/static/icon-sets/ionicons/svg/ios7-checkmark-empty.svg" style=" height: 50px; width: 60px; margin-top: -5px; margin-left: -35px; border: none; margin-right: -15px;"><b>Friends</b></button>
-                                </span>
+        <ul class="small-block-grid-2 medium-block-grid-6 large-block-grid-6" style="margin:0.5rem; text-align: left;">
+          <li>
+            <div class="friend-pic" style="vertical-align: middle;">
+              <img src="http://gazettereview.com/wp-content/uploads/2015/04/Candidate.jpg" />                                               </div>
+          </li>
+          <li>
+                            <span class="friend-pic" style="height:30%; margin-top: 30%;">
+                                <b>Waka Flocka Flame</b>
+                                <button style="background-color: #f4f4f4; color: #6f6f6e; margin-top:5%; display: block;">
+                                  <i class="fi-check"></i>   Friends
+                                </button>                                   
                             </span>
-          </div>
-          <div style="margin-left: 1.2rem; margin-right: 1.2rem; width: 33%; display: inline-block; margin: auto; text-align: left;">
-                            <span class="friend-pic">
-                                <img src="http://ccdn.hiphopdx.com/2012/08/1-Waka_Flocka-MMG-hhdx-300x300.jpg" />
-                                <span class="friend-pic">
-                                    <p style="margin-top: 30px;"><b>Waka Flocka Flame</b></p>
-                                    <button disabled style="background: white; color: black; height: 40px; width: 180px; padding-top: 0px;"><img src="http://uxrepo.com/static/icon-sets/ionicons/svg/ios7-checkmark-empty.svg" style=" height: 50px; width: 60px; margin-top: -5px; margin-left: -35px; border: none; margin-right: -15px;"><b>Friends</b></button>
-                                </span>
+          </li>
+          <li>
+            <div class="friend-pic" style="vertical-align: middle;">
+              <img src="http://gazettereview.com/wp-content/uploads/2015/04/Candidate.jpg" />                                               </div>
+          </li>
+          <li>
+                            <span class="friend-pic" style="height:30%; margin-top: 30%;">
+                                <b>Waka Flocka Flame</b>
+                                <button style="background-color: #f4f4f4; color: #6f6f6e; margin-top:5%; display: block;">
+                                  <i class="fi-check"></i>   Friends
+                                </button>                                   
                             </span>
-          </div>
-          <div style="margin-left: 1.2rem; margin-right: 1.2rem; width: 33%; display: inline-block; margin: auto; text-align: left;">
-                            <span class="friend-pic">
-                                <img src="http://ccdn.hiphopdx.com/2012/08/1-Waka_Flocka-MMG-hhdx-300x300.jpg" />
-                                <span class="friend-pic">
-                                    <p style="margin-top: 30px;"><b>Waka Flocka Flame</b></p>
-                                    <button disabled style="background: white; color: black; height: 40px; width: 180px; padding-top: 0px;"><img src="http://uxrepo.com/static/icon-sets/ionicons/svg/ios7-checkmark-empty.svg" style=" height: 50px; width: 60px; margin-top: -5px; margin-left: -35px; border: none; margin-right: -15px;"><b>Friends</b></button>
-                                </span>
+          </li>
+          <li>
+            <div class="friend-pic" style="vertical-align: middle;">
+              <img src="http://gazettereview.com/wp-content/uploads/2015/04/Candidate.jpg" />                                               </div>
+          </li>
+          <li>
+                            <span class="friend-pic" style="height:30%; margin-top: 30%;">
+                                <b>Waka Flocka Flame</b>
+                                <button style="background-color: #f4f4f4; color: #6f6f6e; margin-top:5%; display: block;">
+                                  <i class="fi-check"></i>   Friends
+                                </button>                                   
                             </span>
-          </div>
-        </div>
-
-
-        <div style="padding-left: 10%;">
-          <div style="margin-left: 1.2rem; margin-right: 1.2rem; width: 33%; display: inline-block; margin: auto; text-align: left;">
-                            <span class="friend-pic">
-                                <img src="http://ccdn.hiphopdx.com/2012/08/1-Waka_Flocka-MMG-hhdx-300x300.jpg" />
-                                <span class="friend-pic">
-                                    <p style="margin-top: 30px;"><b>Waka Flocka Flame</b></p>
-                                    <button disabled style="background: white; color: black; height: 40px; width: 180px; padding-top: 0px;"><img src="http://uxrepo.com/static/icon-sets/ionicons/svg/ios7-checkmark-empty.svg" style=" height: 50px; width: 60px; margin-top: -5px; margin-left: -35px; border: none; margin-right: -15px;"><b>Friends</b></button>
-                                </span>
+          </li>
+          <li>
+            <div class="friend-pic" style="vertical-align: middle;">
+              <img src="http://gazettereview.com/wp-content/uploads/2015/04/Candidate.jpg" />                                               </div>
+          </li>
+          <li>
+                            <span class="friend-pic" style="height:30%; margin-top: 30%;">
+                                <b>Waka Flocka Flame</b>
+                                <button style="background-color: #f4f4f4; color: #6f6f6e; margin-top:5%; display: block;">
+                                  Requested
+                                </button>                                   
                             </span>
-          </div>
-          <div style="margin-left: 1.2rem; margin-right: 1.2rem; width: 33%; display: inline-block; margin: auto; text-align: left;">
-                            <span class="friend-pic">
-                                <img src="http://ccdn.hiphopdx.com/2012/08/1-Waka_Flocka-MMG-hhdx-300x300.jpg" />
-                                <span class="friend-pic">
-                                    <p style="margin-top: 30px;"><b>Waka Flocka Flame</b></p>
-                                    <button disabled style="background: white; color: black; height: 40px; width: 180px; padding-top: 0px;"><img src="http://uxrepo.com/static/icon-sets/ionicons/svg/ios7-checkmark-empty.svg" style=" height: 50px; width: 60px; margin-top: -5px; margin-left: -35px; border: none; margin-right: -15px;"><b>Friends</b></button>
-                                </span>
+          </li>
+          <li>
+            <div class="friend-pic" style="vertical-align: middle;">
+              <img src="http://gazettereview.com/wp-content/uploads/2015/04/Candidate.jpg" />                                               </div>
+          </li>
+          <li>
+                            <span class="friend-pic" style="height:30%; margin-top: 30%;">
+                                <b>Waka Flocka Flame</b>
+                                <button style="background-color: #f4f4f4; color: #6f6f6e; margin-top:5%; display: block;">
+                                  <span style="font-size: 1.2rem; line-height: 0.6rem; margin-right: 0.2rem;">+</span>
+                                  Add Friend
+                                </button>                                   
                             </span>
-          </div>
-          <div style="margin-left: 1.2rem; margin-right: 1.2rem; width: 33%; display: inline-block; margin: auto; text-align: left;">
-                            <span class="friend-pic">
-                                <img src="http://ccdn.hiphopdx.com/2012/08/1-Waka_Flocka-MMG-hhdx-300x300.jpg" />
-                                <span class="friend-pic">
-                                    <p style="margin-top: 30px;"><b>Waka Flocka Flame</b></p>
-                                    <button style="background: white; color: black; height: 40px; line-height: 10px; width: 180px;"><b>+ Add Friend</b></button>
-                                </span>
+          </li>
+          <li>
+            <div class="friend-pic" style="vertical-align: middle;">
+              <img src="http://gazettereview.com/wp-content/uploads/2015/04/Candidate.jpg" />                                               </div>
+          </li>
+          <li>
+                            <span class="friend-pic" style="height:30%; margin-top: 30%;">
+                                <b>Waka Flocka Flame</b>
+                                <button style="background-color: #f4f4f4; color: #6f6f6e; margin-top:5%; display: block;">
+                                  <span style="font-size: 1.2rem; line-height: 0.6rem; margin-right: 0.2rem;">+</span>
+                                  Add Friend
+                                </button>                               
                             </span>
-          </div>
-        </div>
-
-
-        <div style="padding-left: 10%;">
-          <div style="margin-left: 1.2rem; margin-right: 1.2rem; width: 33%; display: inline-block; margin: auto; text-align: left;">
-                            <span class="friend-pic">
-                                <img src="http://ccdn.hiphopdx.com/2012/08/1-Waka_Flocka-MMG-hhdx-300x300.jpg" />
-                                <span class="friend-pic">
-                                    <p style="margin-top: 30px;"><b>Waka Flocka Flame</b></p>
-                                    <button style="background: white; color: black; height: 40px; line-height: 10px; width: 180px;"><b>+ Add Friend</b></button>
-                                </span>
+          </li>
+          <li>
+            <div class="friend-pic" style="vertical-align: middle;">
+              <img src="http://gazettereview.com/wp-content/uploads/2015/04/Candidate.jpg" />                                               </div>
+          </li>
+          <li>
+                            <span class="friend-pic" style="height:30%; margin-top: 30%;">
+                                <b>Waka Flocka Flame</b>
+                                <button style="background-color: #f4f4f4; color: #6f6f6e; margin-top:5%; display: block;">
+                                  <span style="font-size: 1.2rem; line-height: 0.6rem; margin-right: 0.2rem;">+</span>
+                                  Add Friend
+                                </button>                                  
                             </span>
-          </div>
-          <div style="margin-left: 1.2rem; margin-right: 1.2rem; width: 33%; display: inline-block; margin: auto; text-align: left;">
-                            <span class="friend-pic">
-                                <img src="http://ccdn.hiphopdx.com/2012/08/1-Waka_Flocka-MMG-hhdx-300x300.jpg" />
-                                <span class="friend-pic">
-                                    <p style="margin-top: 30px;"><b>Waka Flocka Flame</b></p>
-                                    <button style="background: white; color: black; height: 40px; line-height: 10px; width: 180px;"><b>+ Add Friend</b></button>
-                                </span>
+          </li>
+          <li>
+            <div class="friend-pic" style="vertical-align: middle;">
+              <img src="http://gazettereview.com/wp-content/uploads/2015/04/Candidate.jpg" />                                               </div>
+          </li>
+          <li>
+                            <span class="friend-pic" style="height:30%; margin-top: 30%;">
+                                <b>Waka Flocka Flame</b>
+                                <button style="background-color: #f4f4f4; color: #6f6f6e; margin-top:5%; display: block;">
+                                  <span style="font-size: 1.2rem; line-height: 0.6rem; margin-right: 0.2rem;">+</span>
+                                  Add Friend
+                                </button>                         
                             </span>
-          </div>
-          <div style="margin-left: 1.2rem; margin-right: 1.2rem; width: 33%; display: inline-block; margin: auto; text-align: left;">
-                            <span class="friend-pic">
-                                <img src="http://ccdn.hiphopdx.com/2012/08/1-Waka_Flocka-MMG-hhdx-300x300.jpg" />
-                                <span class="friend-pic">
-                                    <p style="margin-top: 30px;"><b>Waka Flocka Flame</b></p>
-                                    <button style="background: white; color: black; height: 40px; line-height: 10px; width: 180px;"><b>+ Add Friend</b></button>
-                                </span>
+          </li>
+          <li>
+            <div class="friend-pic" style="vertical-align: middle;">
+              <img src="http://gazettereview.com/wp-content/uploads/2015/04/Candidate.jpg" />                                               </div>
+          </li>
+          <li>
+                            <span class="friend-pic" style="height:30%; margin-top: 30%;">
+                                <b>Waka Flocka Flame</b>
+                                <button style="background-color: #f4f4f4; color: #6f6f6e; margin-top:5%; display: block;">
+                                  <span style="font-size: 1.2rem; line-height: 0.6rem; margin-right: 0.2rem;">+</span>
+                                  Add Friend
+                                </button>                                   
                             </span>
-          </div>
-        </div>
-
-
-        <div style="padding-left: 10%;">
-          <div style="margin-left: 1.2rem; margin-right: 1.2rem; width: 33%; display: inline-block; margin: auto; text-align: left;">
-                            <span class="friend-pic">
-                                <img src="http://ccdn.hiphopdx.com/2012/08/1-Waka_Flocka-MMG-hhdx-300x300.jpg" />
-                                <span class="friend-pic">
-                                    <p style="margin-top: 30px;"><b>Waka Flocka Flame</b></p>
-                                    <button style="background: white; color: black; height: 40px; line-height: 10px; width: 180px;"><b>+ Add Friend</b></button>
-                                </span>
-                            </span>
-          </div>
-          <div style="margin-left: 1.2rem; margin-right: 1.2rem; width: 33%; display: inline-block; margin: auto; text-align: left;">
-                            <span class="friend-pic">
-                                <img src="http://ccdn.hiphopdx.com/2012/08/1-Waka_Flocka-MMG-hhdx-300x300.jpg" />
-                                <span class="friend-pic">
-                                    <p style="margin-top: 30px;"><b>Waka Flocka Flame</b></p>
-                                    <button style="background: white; color: black; height: 40px; line-height: 10px; width: 180px;"><b>+ Add Friend</b></button>
-                                </span>
-                            </span>
-          </div>
-          <div style="margin-left: 1.2rem; margin-right: 1.2rem; width: 33%; display: inline-block; margin: auto; text-align: left;">
-                            <span class="friend-pic">
-                                <img src="http://ccdn.hiphopdx.com/2012/08/1-Waka_Flocka-MMG-hhdx-300x300.jpg" />
-                                <span class="friend-pic">
-                                    <p style="margin-top: 30px;"><b>Waka Flocka Flame</b></p>
-                                    <button style="background: white; color: black; height: 40px; line-height: 10px; width: 180px;"><b>+ Add Friend</b></button>
-                                </span>
-                            </span>
-          </div>
-        </div>
+          </li>
 
 
-        <div style="background: #D83431; color: white; width: 250px; height: 40px; text-align: center; line-height: 45px; margin-left: 80%;">
-          <a href="#" style="margin-right: 5px; color: white;">First</a><a href="#" style="color: white;"><<</a> 1-4 of 4 <a href="#" style="color: white;">>></a><a href="#" style="margin-left: 5px; color: white;">Last</a>
-        </div>
+        </ul>
+      </li>
 
-      </div>
-    </fieldset>
+    </ul>
+  </div>
+</div>
 
 </body>
-</html>
