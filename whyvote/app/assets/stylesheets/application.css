@@ -26,10 +26,11 @@
     position: fixed;
     top: 0;
     width: 100%;
-    height: 40px;
+    height: 50px;
     z-index: 100;
     background-color: #2E2F30;
     color: #ffffff;
+    font-size:1rem;
 }
 
 .navbar-brand{
@@ -42,7 +43,7 @@
 
 .navbar-brand > img {
     width: auto;
-    height: 40px;
+    height: 50px;
     padding:5px;
 }
 
