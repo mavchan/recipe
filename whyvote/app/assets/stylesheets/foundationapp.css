@@ -1177,11 +1177,11 @@ button, .button {
 button:hover, button:focus, .button:hover, .button:focus {
     background-color: #df5c5a; color:#fff;}
 button.secondary, .button.secondary {
-    background-color: #e7e7e7;
+    background-color: #D83431;
     border-color: #b9b9b9;
     color: #333333; }
 button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
-    background-color: #b9b9b9; }
+    background-color: #D83431; }
 button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
     color: #333333; }
 button.success, .button.success {
