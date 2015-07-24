@@ -1,3 +1,4 @@
+
 <head>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -56,10 +57,20 @@
                 <input type="radio" name="aa-group" id="aa1" data-toggle="button">
                 <label class="button" for="aa1" style="width: calc(100% - 3.5rem); background-color: #cdcdcd;">Yes</label>
               </div>
-              <div style="text-align: left; width:100%;">
+              <div style="text-align: left; width:100%; margin: 1rem 0;">
                 <span style="font-size: 1.375rem;">B)  </span>
                 <input type="radio" name="aa-group" id="aa2" data-toggle="button">
-                <label class="button" for="aa2" style="width: calc(100% - 3.5rem); background-color: #cdcdcd;">No</label>
+                <label class="button" for="aa2" style="width: calc(100% - 3.5rem); background-color: #cdcdcd;">No, we should pull all troops out but we should continue to provide humanitarian aid</label>
+              </div>
+              <div style="text-align: left; width:100%; margin: 1rem 0;">
+                <span style="font-size: 1.375rem;">C)  </span>
+                <input type="radio" name="aa-group" id="aa2" data-toggle="button">
+                <label class="button" for="aa2" style="width: calc(100% - 3.5rem); background-color: #cdcdcd;">No, we should pull all troops out but we should continue to provide military aid</label>
+              </div>
+              <div style="text-align: left; width:100%; margin: 1rem 0;">
+                <span style="font-size: 1.375rem;">D)  </span>
+                <input type="radio" name="aa-group" id="aa2" data-toggle="button">
+                <label class="button" for="aa2" style="width: calc(100% - 3.5rem); background-color: #cdcdcd;">Neutral</label>
               </div>
             </div>
             </br>
@@ -68,27 +79,35 @@
               <h5 style="padding:0.2rem;">Importance:</h5>
             </div>
             <div class="large-10 middle-10 columns" style="vertical-align: middle;">
-              <ul class="button-group round even-5" style="vertical-align: middle;">
+              <ul class="button-group round even-5" style="vertical-align: middle; ">
                 <li><a href="#" class="button" for="a1">1</a></li>
                 <li><a href="#" class="button" for="a2">2</a></li>
                 <li><a href="#" class="button" for="a3">3</a></li>
                 <li><a href="#" class="button" for="a4">4</a></li>
                 <li><a href="#" class="button" for="a5">5</a></li>
               </ul>
+              <ul class="small-block-grid-5" style="margin-top: -0.8rem; font-size: 0.9em;">
+                <li>Least</li>
+                <li></li>
+                <li></li>
+                <li></li><li>Most</li>
+              </ul>
             </div>
           </div>
+
         </li>
-        <li class="bullet-item">
-          </br>1=least 5=most</br>
-          <select style= "margin-left:-60%;">
-            <option>Share results with</option>
-            <option>Public</option>
-            <option>Friends</option>
-            <option>Only Me</option>
-          </select>
-          <button style="position: absolute; right:0; width: 20%; margin-right: 14%;">
-            Show Results
-          </button>
+        <li class="bullet-item clearfix">
+          <div class="large-5 medium-11 small-12 right">
+            <select style="width:50%;">
+              <option>Share results with</option>
+              <option>Public</option>
+              <option>Friends</option>
+              <option>Only Me</option>
+            </select>
+            <button style="width: 35%;">
+              Show Results
+            </button>
+          </div>
         </li>
       </ul>
     </div>
