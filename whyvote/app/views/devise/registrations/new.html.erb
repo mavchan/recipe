@@ -15,7 +15,7 @@
 
           <%= f.text_field :first_name, :class => "login", :placeholder => "First name" %>
           <%= f.text_field :last_name, :class => "login", :placeholder => "Last name" %>
-          <%= f.email_field :email, :class => "login", :placeholder => "Email" %>
+          <%= f.text_field :email, :class => "login", :placeholder => "Email" %>
           <% if @minimum_password_length %>
               <em>(<%= @minimum_password_length %> characters minimum)</em>
           <% end %><br />
