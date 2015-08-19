@@ -5,7 +5,6 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
   has_many :members
   has_many :teams, through: :members
-  has_surveys
 
   def full_name
     return (self.first_name + " " + self.last_name)
