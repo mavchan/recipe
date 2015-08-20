@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
-@import url(http://fonts.googleapis.com/css?family=Arimo)
+@import url(http://fonts.googleapis.com/css?family=Arimo);
 
 
 #app-container {
@@ -85,10 +85,12 @@
     background-color: #424242;
     color: #fff;
     width: 100vw;
-    position: relative;
+    position: absolute;
+    bottom: 0;
     padding: 0.5rem;
     font-size: 0.8rem;
     opacity: .7;
+    z-index: 100;
 }
 
 .fb_link a, .fb_link a:hover {

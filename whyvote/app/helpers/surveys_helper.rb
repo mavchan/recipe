@@ -1,5 +1,5 @@
 module SurveysHelper
-  def get_answer_fields attempt
+  def get_answer_fields(attempt)
     attempt.survey.questions.map { |q| Answer.new(question_id: q.id) }
   end
 
@@ -9,5 +9,9 @@ module SurveysHelper
     elsif action_name =~ /edit|update/
       attempt_path(resource)
     end
+  end
+
+  def selected?(answer, option)
+    if answer.option_id == option.id then 'selected' else '' end
   end
 end
