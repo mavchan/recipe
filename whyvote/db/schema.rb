@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150818212921) do
+ActiveRecord::Schema.define(version: 20150821192108) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -45,9 +45,21 @@ ActiveRecord::Schema.define(version: 20150818212921) do
 
   create_table "options", force: :cascade do |t|
     t.integer  "question_id"
-    t.integer  "weight",          default: 0
     t.string   "text"
-    t.integer  "political_party"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "options_parties", id: false, force: :cascade do |t|
+    t.integer "option_id"
+    t.integer "party_id"
+  end
+
+  add_index "options_parties", ["option_id"], name: "index_options_parties_on_option_id", using: :btree
+  add_index "options_parties", ["party_id"], name: "index_options_parties_on_party_id", using: :btree
+
+  create_table "parties", force: :cascade do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -58,6 +70,7 @@ ActiveRecord::Schema.define(version: 20150818212921) do
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "type"
   end
 
   create_table "surveys", force: :cascade do |t|
