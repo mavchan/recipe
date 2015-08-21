@@ -11,7 +11,7 @@
             <% answer.question.options.each do |option| %>
                 <li class="radio">
                   <label>
-                    <span class="<%= option.political_party %> <%= selected?(answer, option) %>"> <%= option.text %></span>
+                    <span class="<%= selected?(answer, option) %>"> <%= option.text %></span>
                   </label>
                 </li>
             <% end %>
