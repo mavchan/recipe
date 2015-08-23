@@ -1,9 +1,6 @@
 Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  get '/teams/view-teams', :to => 'teams#view_teams'
-
   get '/teams/survey-page', :to => 'teams#survey_page'
-
   get '/members/dashboard', :to => 'members#dashboard'
   get '/members/friend_profile', :to => 'members#friend_profile'
   get '/members/no_info_dashboard', :to => 'members#no_info_dashboard'
@@ -11,6 +8,8 @@ Rails.application.routes.draw do
   get '/members/stranger_profile', :to => 'members#stranger_profile'
   get '/pages/about_team', :to => 'pages#about_team'
   get '/pages/about_whyvote', :to => 'pages#about_whyvote'
+  get '/pages/about_method', :to => 'pages#about_method'
+  get '/members/friends', :to => 'members#my_friends'
 
   resources :members
   resources :teams

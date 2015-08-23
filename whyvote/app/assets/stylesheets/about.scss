@@ -6,6 +6,8 @@
     position: static;
     font-size:1rem;
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    a{color: #fff;}
+    a:hover{text-decoration: underline;}
 }
 
 .about-heading{
@@ -69,10 +71,11 @@
 
 .about-heading{
     width: 100%;
-    border-bottom: 1px solid white;
     text-align: left;
-    letter-spacing: 0.5rem;
-    margin: 2rem 0 2rem 0;
+    letter-spacing: 0rem;
+    border-bottom: none;
+    margin: 5rem 0 2rem 0;
+    font-size:1.25rem;
 }
 
 .about-image, .about-image h5, .about-image h4{
@@ -124,7 +127,7 @@
     padding: 1rem;
     position: fixed;
     top: 4.5rem;
-    margin-left: -11.5rem;
+    margin-left: -13rem;
     text-align: right;
     font-size: 1rem;
 }

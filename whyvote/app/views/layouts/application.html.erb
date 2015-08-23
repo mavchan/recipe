@@ -15,7 +15,7 @@
     <img src="<%= asset_path 'Whyvote_logo_transparent.png' %>" />
   </a>
 
-
+  <a class="navbar-elem" href="/members/dashboard">Dashboard</a>
   <a class="navbar-elem" href="/members/profile">My Profile</a>
   <a class="navbar-elem" href="/pages/view-users">View Users</a>
   <a class="navbar-elem" href="/pages/survey-page">Survey</a>
@@ -36,13 +36,6 @@
 <div id="app-container">
     <%= yield %>
 </div>
-
-  <% if user_signed_in? %>
-<div id="footer">
-    A tool to find out which party you align with.
-    <span class="fb_link"><a href="http://www.facebook.com/groups/whyvote">Connect with us on Facebook.</a></span>
-</div>
-<%end%>
 
 </body>
 

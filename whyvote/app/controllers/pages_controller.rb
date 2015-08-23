@@ -36,5 +36,8 @@ class PagesController < ApplicationController
     render 'pages/about_whyvote.html.erb'
   end
 
+  def about_method
+    render 'pages/about_survey-method.html.erb'
+  end
 
 end

@@ -74,10 +74,6 @@ class TeamsController < ApplicationController
     end
   end
 
-  def view_teams
-    render 'teams/viewTeams.html.erb'
-  end
-
   def survey_page
     render 'teams/survey-page.html.erb'
   end
