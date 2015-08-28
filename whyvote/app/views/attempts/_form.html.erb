@@ -9,6 +9,7 @@
           <li>
             <% question = answer_fields.object.question %>
             <p class="question"><%= question.text %></p>
+                <% if question.format == 'selection' %>
                 <ul class="options">
                   <%= collection_radio_buttons('attempt[answers_attributes]', question.id, question.options, :id, :text) do |b| %>
                       <li class="radio">
@@ -16,6 +17,7 @@
                       </li>
                   <% end %>
                 </ul>
+                <% end %>
           </li>
       <% end -%>
     </ol>

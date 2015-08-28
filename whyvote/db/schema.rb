@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150821192108) do
+ActiveRecord::Schema.define(version: 20150828041829) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -48,6 +48,7 @@ ActiveRecord::Schema.define(version: 20150821192108) do
     t.string   "text"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "source_url"
   end
 
   create_table "options_parties", id: false, force: :cascade do |t|
@@ -70,7 +71,8 @@ ActiveRecord::Schema.define(version: 20150821192108) do
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "type"
+    t.integer  "format"
+    t.string   "source_url"
   end
 
   create_table "surveys", force: :cascade do |t|

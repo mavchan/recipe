@@ -5,17 +5,17 @@ class Question < ActiveRecord::Base
       :reject_if => ->(a) { a[:text].blank? },
       :allow_destroy => true
 
-  # enum type: [ :selection, :rank ]
-  #
-  # def type_enum
-  #   self.class.types.to_a
-  # end
-  #
-  # def type= value
-  #   if value.kind_of?(String) and value.to_i.to_s == value
-  #     super value.to_i
-  #   else
-  #     super value
-  #   end
-  # end
+  enum format: [ :selection, :rank ]
+
+  def format_enum
+    self.class.formats.to_a
+  end
+
+  def format= value
+    if value.kind_of?(String) and value.to_i.to_s == value
+      super value.to_i
+    else
+      super value
+    end
+  end
 end
