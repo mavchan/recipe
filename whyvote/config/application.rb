@@ -2,6 +2,11 @@ require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
 
+if Gem::Specification.find_all_by_name('dotenv-rails').any?
+  require 'dotenv'
+  Dotenv.load "#{Rails.env}.env"
+end
+
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)

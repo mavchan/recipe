@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+
+  # Facebook login #
+  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" } do
+    delete 'sign_out', :to => 'devise/sessions#destroy', :as => :destroy_user_session
+  end
+
   get '/teams/survey-page', :to => 'teams#survey_page'
   get '/members/dashboard', :to => 'members#dashboard'
   get '/members/friend_profile', :to => 'members#friend_profile'
@@ -16,7 +22,6 @@ Rails.application.routes.draw do
   resources :surveys
   resources :attempts
   get "/pages/:page" => "pages#show"
-  devise_for :users
 
   get '/users/:id', to: 'users#show', :as => :user
   get '/users/', to: 'users#index'

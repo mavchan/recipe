@@ -26,6 +26,7 @@
               <%= f.submit 'Login', :class => "login_button" %>
             </div>
             <br>
+            <%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %> </br>
             <%= link_to "Don't have an account? Sign up!", new_user_registration_path %>
           </div>
         </div>
